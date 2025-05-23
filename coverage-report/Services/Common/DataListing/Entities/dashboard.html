@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Services/Common/DataListing/Entities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../../_css/bootstrap.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/nv.d3.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/style.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="../../../index.html">Services</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">Common</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">DataListing</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Entities</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ClientNotificationListing.php.html#20">App\Services\Common\DataListing\Entities\ClientNotificationListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#25">App\Services\Common\DataListing\Entities\ClientTeamsListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#23">App\Services\Common\DataListing\Entities\ClientUsersListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageNotificationTemplatesListing.php.html#18">App\Services\Common\DataListing\Entities\ManageNotificationTemplatesListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManagePushNotificationStatisticsListing.php.html#19">App\Services\Common\DataListing\Entities\ManagePushNotificationStatisticsListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageRegularPushNotificationsListing.php.html#16">App\Services\Common\DataListing\Entities\ManageRegularPushNotificationsListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageTelegraphBotsListing.php.html#18">App\Services\Common\DataListing\Entities\ManageTelegraphBotsListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageUsersListing.php.html#21">App\Services\Common\DataListing\Entities\ManageUsersListing</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientApplicationStatisticsListing.php.html#25">App\Services\Common\DataListing\Entities\ClientApplicationStatisticsListing</a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="ClientApplicationsListing.php.html#23">App\Services\Common\DataListing\Entities\ClientApplicationsListing</a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ClientUsersListing.php.html#23">App\Services\Common\DataListing\Entities\ClientUsersListing</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#25">App\Services\Common\DataListing\Entities\ClientTeamsListing</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="ClientApplicationStatisticsListing.php.html#25">App\Services\Common\DataListing\Entities\ClientApplicationStatisticsListing</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="ClientApplicationsListing.php.html#23">App\Services\Common\DataListing\Entities\ClientApplicationsListing</a></td><td class="text-right">7</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ClientNotificationListing.php.html#22"><abbr title="App\Services\Common\DataListing\Entities\ClientNotificationListing::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientNotificationListing.php.html#30"><abbr title="App\Services\Common\DataListing\Entities\ClientNotificationListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientNotificationListing.php.html#35"><abbr title="App\Services\Common\DataListing\Entities\ClientNotificationListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientNotificationListing.php.html#52"><abbr title="App\Services\Common\DataListing\Entities\ClientNotificationListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientNotificationListing.php.html#60"><abbr title="App\Services\Common\DataListing\Entities\ClientNotificationListing::defaultOrder">defaultOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientNotificationListing.php.html#65"><abbr title="App\Services\Common\DataListing\Entities\ClientNotificationListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#30"><abbr title="App\Services\Common\DataListing\Entities\ClientTeamsListing::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#38"><abbr title="App\Services\Common\DataListing\Entities\ClientTeamsListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#46"><abbr title="App\Services\Common\DataListing\Entities\ClientTeamsListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#68"><abbr title="App\Services\Common\DataListing\Entities\ClientTeamsListing::defaultOrder">defaultOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#76"><abbr title="App\Services\Common\DataListing\Entities\ClientTeamsListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#90"><abbr title="App\Services\Common\DataListing\Entities\ClientTeamsListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#28"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#36"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#44"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#78"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::defaultOrder">defaultOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#86"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#95"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageNotificationTemplatesListing.php.html#20"><abbr title="App\Services\Common\DataListing\Entities\ManageNotificationTemplatesListing::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageNotificationTemplatesListing.php.html#28"><abbr title="App\Services\Common\DataListing\Entities\ManageNotificationTemplatesListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageNotificationTemplatesListing.php.html#33"><abbr title="App\Services\Common\DataListing\Entities\ManageNotificationTemplatesListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageNotificationTemplatesListing.php.html#56"><abbr title="App\Services\Common\DataListing\Entities\ManageNotificationTemplatesListing::defaultOrder">defaultOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageNotificationTemplatesListing.php.html#61"><abbr title="App\Services\Common\DataListing\Entities\ManageNotificationTemplatesListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManagePushNotificationStatisticsListing.php.html#21"><abbr title="App\Services\Common\DataListing\Entities\ManagePushNotificationStatisticsListing::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManagePushNotificationStatisticsListing.php.html#29"><abbr title="App\Services\Common\DataListing\Entities\ManagePushNotificationStatisticsListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManagePushNotificationStatisticsListing.php.html#34"><abbr title="App\Services\Common\DataListing\Entities\ManagePushNotificationStatisticsListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManagePushNotificationStatisticsListing.php.html#69"><abbr title="App\Services\Common\DataListing\Entities\ManagePushNotificationStatisticsListing::defaultOrder">defaultOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManagePushNotificationStatisticsListing.php.html#74"><abbr title="App\Services\Common\DataListing\Entities\ManagePushNotificationStatisticsListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageRegularPushNotificationsListing.php.html#18"><abbr title="App\Services\Common\DataListing\Entities\ManageRegularPushNotificationsListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageRegularPushNotificationsListing.php.html#47"><abbr title="App\Services\Common\DataListing\Entities\ManageRegularPushNotificationsListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageRegularPushNotificationsListing.php.html#54"><abbr title="App\Services\Common\DataListing\Entities\ManageRegularPushNotificationsListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageRegularPushNotificationsListing.php.html#59"><abbr title="App\Services\Common\DataListing\Entities\ManageRegularPushNotificationsListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageTelegraphBotsListing.php.html#20"><abbr title="App\Services\Common\DataListing\Entities\ManageTelegraphBotsListing::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageTelegraphBotsListing.php.html#28"><abbr title="App\Services\Common\DataListing\Entities\ManageTelegraphBotsListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageTelegraphBotsListing.php.html#33"><abbr title="App\Services\Common\DataListing\Entities\ManageTelegraphBotsListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageTelegraphBotsListing.php.html#48"><abbr title="App\Services\Common\DataListing\Entities\ManageTelegraphBotsListing::defaultOrder">defaultOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageTelegraphBotsListing.php.html#53"><abbr title="App\Services\Common\DataListing\Entities\ManageTelegraphBotsListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageUsersListing.php.html#23"><abbr title="App\Services\Common\DataListing\Entities\ManageUsersListing::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageUsersListing.php.html#31"><abbr title="App\Services\Common\DataListing\Entities\ManageUsersListing::getPermission">getPermission</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageUsersListing.php.html#36"><abbr title="App\Services\Common\DataListing\Entities\ManageUsersListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageUsersListing.php.html#58"><abbr title="App\Services\Common\DataListing\Entities\ManageUsersListing::defaultOrder">defaultOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ManageUsersListing.php.html#63"><abbr title="App\Services\Common\DataListing\Entities\ManageUsersListing::getListItems">getListItems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClientApplicationStatisticsListing.php.html#87"><abbr title="App\Services\Common\DataListing\Entities\ClientApplicationStatisticsListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="ClientApplicationsListing.php.html#92"><abbr title="App\Services\Common\DataListing\Entities\ClientApplicationsListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">61%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ClientUsersListing.php.html#44"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::getFieldCollector">getFieldCollector</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ClientTeamsListing.php.html#90"><abbr title="App\Services\Common\DataListing\Entities\ClientTeamsListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ClientUsersListing.php.html#95"><abbr title="App\Services\Common\DataListing\Entities\ClientUsersListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ClientApplicationStatisticsListing.php.html#87"><abbr title="App\Services\Common\DataListing\Entities\ClientApplicationStatisticsListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ClientApplicationsListing.php.html#92"><abbr title="App\Services\Common\DataListing\Entities\ClientApplicationsListing::predefinedFilters">predefinedFilters</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.7</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.14</a> and <a href="https://phpunit.de/">PHPUnit 11.4.2</a> at Wed Jan 22 10:58:40 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../../_js/jquery.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../../../_js/d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../../../_js/nv.d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,0,0,0,0,0,0,0,0,2,0,9], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([42,0,0,0,0,0,0,2,0,0,0,56], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,5,"<a href=\"ClientApplicationCommentListing.php.html#22\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationCommentListing<\/a>"],[88.88888888888889,7,"<a href=\"ClientApplicationStatisticsListing.php.html#25\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationStatisticsListing<\/a>"],[89.79591836734694,7,"<a href=\"ClientApplicationsListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationsListing<\/a>"],[0,6,"<a href=\"ClientNotificationListing.php.html#20\">App\\Services\\Common\\DataListing\\Entities\\ClientNotificationListing<\/a>"],[0,8,"<a href=\"ClientTeamsListing.php.html#25\">App\\Services\\Common\\DataListing\\Entities\\ClientTeamsListing<\/a>"],[0,10,"<a href=\"ClientUsersListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ClientUsersListing<\/a>"],[100,5,"<a href=\"ManageApplicationCommentListing.php.html#19\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationCommentListing<\/a>"],[100,6,"<a href=\"ManageApplicationsListing.php.html#21\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationsListing<\/a>"],[100,5,"<a href=\"ManageCompaniesListing.php.html#19\">App\\Services\\Common\\DataListing\\Entities\\ManageCompaniesListing<\/a>"],[100,5,"<a href=\"ManageDomainsListing.php.html#18\">App\\Services\\Common\\DataListing\\Entities\\ManageDomainsListing<\/a>"],[0,5,"<a href=\"ManageNotificationTemplatesListing.php.html#18\">App\\Services\\Common\\DataListing\\Entities\\ManageNotificationTemplatesListing<\/a>"],[100,5,"<a href=\"ManagePermissionListing.php.html#16\">App\\Services\\Common\\DataListing\\Entities\\ManagePermissionListing<\/a>"],[0,5,"<a href=\"ManagePushNotificationStatisticsListing.php.html#19\">App\\Services\\Common\\DataListing\\Entities\\ManagePushNotificationStatisticsListing<\/a>"],[100,5,"<a href=\"ManagePushTemplatesListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ManagePushTemplatesListing<\/a>"],[0,4,"<a href=\"ManageRegularPushNotificationsListing.php.html#16\">App\\Services\\Common\\DataListing\\Entities\\ManageRegularPushNotificationsListing<\/a>"],[100,4,"<a href=\"ManageRolesListing.php.html#17\">App\\Services\\Common\\DataListing\\Entities\\ManageRolesListing<\/a>"],[100,6,"<a href=\"ManageSinglePushNotificationsListing.php.html#25\">App\\Services\\Common\\DataListing\\Entities\\ManageSinglePushNotificationsListing<\/a>"],[0,5,"<a href=\"ManageTelegraphBotsListing.php.html#18\">App\\Services\\Common\\DataListing\\Entities\\ManageTelegraphBotsListing<\/a>"],[0,5,"<a href=\"ManageUsersListing.php.html#21\">App\\Services\\Common\\DataListing\\Entities\\ManageUsersListing<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"ClientApplicationCommentListing.php.html#26\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationCommentListing::getModel<\/a>"],[100,1,"<a href=\"ClientApplicationCommentListing.php.html#34\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationCommentListing::getPermission<\/a>"],[100,1,"<a href=\"ClientApplicationCommentListing.php.html#39\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationCommentListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ClientApplicationCommentListing.php.html#53\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationCommentListing::defaultOrder<\/a>"],[100,1,"<a href=\"ClientApplicationCommentListing.php.html#61\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationCommentListing::predefinedFilters<\/a>"],[100,1,"<a href=\"ClientApplicationStatisticsListing.php.html#27\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationStatisticsListing::getModel<\/a>"],[100,1,"<a href=\"ClientApplicationStatisticsListing.php.html#35\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationStatisticsListing::getPermission<\/a>"],[100,1,"<a href=\"ClientApplicationStatisticsListing.php.html#40\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationStatisticsListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ClientApplicationStatisticsListing.php.html#68\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationStatisticsListing::defaultOrder<\/a>"],[100,1,"<a href=\"ClientApplicationStatisticsListing.php.html#73\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationStatisticsListing::getListItems<\/a>"],[61.53846153846154,2,"<a href=\"ClientApplicationStatisticsListing.php.html#87\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationStatisticsListing::predefinedFilters<\/a>"],[100,1,"<a href=\"ClientApplicationsListing.php.html#25\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationsListing::getModel<\/a>"],[100,1,"<a href=\"ClientApplicationsListing.php.html#33\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationsListing::getPermission<\/a>"],[100,1,"<a href=\"ClientApplicationsListing.php.html#38\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationsListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ClientApplicationsListing.php.html#72\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationsListing::defaultOrder<\/a>"],[100,1,"<a href=\"ClientApplicationsListing.php.html#77\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationsListing::getListItems<\/a>"],[61.53846153846154,2,"<a href=\"ClientApplicationsListing.php.html#92\">App\\Services\\Common\\DataListing\\Entities\\ClientApplicationsListing::predefinedFilters<\/a>"],[0,1,"<a href=\"ClientNotificationListing.php.html#22\">App\\Services\\Common\\DataListing\\Entities\\ClientNotificationListing::getModel<\/a>"],[0,1,"<a href=\"ClientNotificationListing.php.html#30\">App\\Services\\Common\\DataListing\\Entities\\ClientNotificationListing::getPermission<\/a>"],[0,1,"<a href=\"ClientNotificationListing.php.html#35\">App\\Services\\Common\\DataListing\\Entities\\ClientNotificationListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ClientNotificationListing.php.html#52\">App\\Services\\Common\\DataListing\\Entities\\ClientNotificationListing::predefinedFilters<\/a>"],[0,1,"<a href=\"ClientNotificationListing.php.html#60\">App\\Services\\Common\\DataListing\\Entities\\ClientNotificationListing::defaultOrder<\/a>"],[0,1,"<a href=\"ClientNotificationListing.php.html#65\">App\\Services\\Common\\DataListing\\Entities\\ClientNotificationListing::getListItems<\/a>"],[0,1,"<a href=\"ClientTeamsListing.php.html#30\">App\\Services\\Common\\DataListing\\Entities\\ClientTeamsListing::getModel<\/a>"],[0,1,"<a href=\"ClientTeamsListing.php.html#38\">App\\Services\\Common\\DataListing\\Entities\\ClientTeamsListing::getPermission<\/a>"],[0,1,"<a href=\"ClientTeamsListing.php.html#46\">App\\Services\\Common\\DataListing\\Entities\\ClientTeamsListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ClientTeamsListing.php.html#68\">App\\Services\\Common\\DataListing\\Entities\\ClientTeamsListing::defaultOrder<\/a>"],[0,1,"<a href=\"ClientTeamsListing.php.html#76\">App\\Services\\Common\\DataListing\\Entities\\ClientTeamsListing::getListItems<\/a>"],[0,3,"<a href=\"ClientTeamsListing.php.html#90\">App\\Services\\Common\\DataListing\\Entities\\ClientTeamsListing::predefinedFilters<\/a>"],[0,1,"<a href=\"ClientUsersListing.php.html#28\">App\\Services\\Common\\DataListing\\Entities\\ClientUsersListing::getModel<\/a>"],[0,1,"<a href=\"ClientUsersListing.php.html#36\">App\\Services\\Common\\DataListing\\Entities\\ClientUsersListing::getPermission<\/a>"],[0,4,"<a href=\"ClientUsersListing.php.html#44\">App\\Services\\Common\\DataListing\\Entities\\ClientUsersListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ClientUsersListing.php.html#78\">App\\Services\\Common\\DataListing\\Entities\\ClientUsersListing::defaultOrder<\/a>"],[0,1,"<a href=\"ClientUsersListing.php.html#86\">App\\Services\\Common\\DataListing\\Entities\\ClientUsersListing::getListItems<\/a>"],[0,2,"<a href=\"ClientUsersListing.php.html#95\">App\\Services\\Common\\DataListing\\Entities\\ClientUsersListing::predefinedFilters<\/a>"],[100,1,"<a href=\"ManageApplicationCommentListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationCommentListing::getModel<\/a>"],[100,1,"<a href=\"ManageApplicationCommentListing.php.html#31\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationCommentListing::getPermission<\/a>"],[100,1,"<a href=\"ManageApplicationCommentListing.php.html#36\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationCommentListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManageApplicationCommentListing.php.html#50\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationCommentListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManageApplicationCommentListing.php.html#58\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationCommentListing::predefinedFilters<\/a>"],[100,1,"<a href=\"ManageApplicationsListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationsListing::getModel<\/a>"],[100,1,"<a href=\"ManageApplicationsListing.php.html#31\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationsListing::getPermission<\/a>"],[100,1,"<a href=\"ManageApplicationsListing.php.html#36\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationsListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManageApplicationsListing.php.html#64\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationsListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManageApplicationsListing.php.html#72\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationsListing::predefinedFilters<\/a>"],[100,1,"<a href=\"ManageApplicationsListing.php.html#79\">App\\Services\\Common\\DataListing\\Entities\\ManageApplicationsListing::getListItems<\/a>"],[100,1,"<a href=\"ManageCompaniesListing.php.html#21\">App\\Services\\Common\\DataListing\\Entities\\ManageCompaniesListing::getModel<\/a>"],[100,1,"<a href=\"ManageCompaniesListing.php.html#29\">App\\Services\\Common\\DataListing\\Entities\\ManageCompaniesListing::getPermission<\/a>"],[100,1,"<a href=\"ManageCompaniesListing.php.html#34\">App\\Services\\Common\\DataListing\\Entities\\ManageCompaniesListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManageCompaniesListing.php.html#52\">App\\Services\\Common\\DataListing\\Entities\\ManageCompaniesListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManageCompaniesListing.php.html#57\">App\\Services\\Common\\DataListing\\Entities\\ManageCompaniesListing::getListItems<\/a>"],[100,1,"<a href=\"ManageDomainsListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ManageDomainsListing::getModel<\/a>"],[100,1,"<a href=\"ManageDomainsListing.php.html#31\">App\\Services\\Common\\DataListing\\Entities\\ManageDomainsListing::getPermission<\/a>"],[100,1,"<a href=\"ManageDomainsListing.php.html#39\">App\\Services\\Common\\DataListing\\Entities\\ManageDomainsListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManageDomainsListing.php.html#56\">App\\Services\\Common\\DataListing\\Entities\\ManageDomainsListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManageDomainsListing.php.html#61\">App\\Services\\Common\\DataListing\\Entities\\ManageDomainsListing::getListItems<\/a>"],[0,1,"<a href=\"ManageNotificationTemplatesListing.php.html#20\">App\\Services\\Common\\DataListing\\Entities\\ManageNotificationTemplatesListing::getModel<\/a>"],[0,1,"<a href=\"ManageNotificationTemplatesListing.php.html#28\">App\\Services\\Common\\DataListing\\Entities\\ManageNotificationTemplatesListing::getPermission<\/a>"],[0,1,"<a href=\"ManageNotificationTemplatesListing.php.html#33\">App\\Services\\Common\\DataListing\\Entities\\ManageNotificationTemplatesListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ManageNotificationTemplatesListing.php.html#56\">App\\Services\\Common\\DataListing\\Entities\\ManageNotificationTemplatesListing::defaultOrder<\/a>"],[0,1,"<a href=\"ManageNotificationTemplatesListing.php.html#61\">App\\Services\\Common\\DataListing\\Entities\\ManageNotificationTemplatesListing::getListItems<\/a>"],[100,1,"<a href=\"ManagePermissionListing.php.html#18\">App\\Services\\Common\\DataListing\\Entities\\ManagePermissionListing::getModel<\/a>"],[100,1,"<a href=\"ManagePermissionListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ManagePermissionListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManagePermissionListing.php.html#40\">App\\Services\\Common\\DataListing\\Entities\\ManagePermissionListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManagePermissionListing.php.html#45\">App\\Services\\Common\\DataListing\\Entities\\ManagePermissionListing::getPermission<\/a>"],[100,1,"<a href=\"ManagePermissionListing.php.html#50\">App\\Services\\Common\\DataListing\\Entities\\ManagePermissionListing::transformData<\/a>"],[0,1,"<a href=\"ManagePushNotificationStatisticsListing.php.html#21\">App\\Services\\Common\\DataListing\\Entities\\ManagePushNotificationStatisticsListing::getModel<\/a>"],[0,1,"<a href=\"ManagePushNotificationStatisticsListing.php.html#29\">App\\Services\\Common\\DataListing\\Entities\\ManagePushNotificationStatisticsListing::getPermission<\/a>"],[0,1,"<a href=\"ManagePushNotificationStatisticsListing.php.html#34\">App\\Services\\Common\\DataListing\\Entities\\ManagePushNotificationStatisticsListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ManagePushNotificationStatisticsListing.php.html#69\">App\\Services\\Common\\DataListing\\Entities\\ManagePushNotificationStatisticsListing::defaultOrder<\/a>"],[0,1,"<a href=\"ManagePushNotificationStatisticsListing.php.html#74\">App\\Services\\Common\\DataListing\\Entities\\ManagePushNotificationStatisticsListing::getListItems<\/a>"],[100,1,"<a href=\"ManagePushTemplatesListing.php.html#25\">App\\Services\\Common\\DataListing\\Entities\\ManagePushTemplatesListing::getModel<\/a>"],[100,1,"<a href=\"ManagePushTemplatesListing.php.html#30\">App\\Services\\Common\\DataListing\\Entities\\ManagePushTemplatesListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManagePushTemplatesListing.php.html#45\">App\\Services\\Common\\DataListing\\Entities\\ManagePushTemplatesListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManagePushTemplatesListing.php.html#50\">App\\Services\\Common\\DataListing\\Entities\\ManagePushTemplatesListing::getPermission<\/a>"],[100,1,"<a href=\"ManagePushTemplatesListing.php.html#55\">App\\Services\\Common\\DataListing\\Entities\\ManagePushTemplatesListing::getListItems<\/a>"],[0,1,"<a href=\"ManageRegularPushNotificationsListing.php.html#18\">App\\Services\\Common\\DataListing\\Entities\\ManageRegularPushNotificationsListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ManageRegularPushNotificationsListing.php.html#47\">App\\Services\\Common\\DataListing\\Entities\\ManageRegularPushNotificationsListing::predefinedFilters<\/a>"],[0,1,"<a href=\"ManageRegularPushNotificationsListing.php.html#54\">App\\Services\\Common\\DataListing\\Entities\\ManageRegularPushNotificationsListing::getPermission<\/a>"],[0,1,"<a href=\"ManageRegularPushNotificationsListing.php.html#59\">App\\Services\\Common\\DataListing\\Entities\\ManageRegularPushNotificationsListing::getListItems<\/a>"],[100,1,"<a href=\"ManageRolesListing.php.html#19\">App\\Services\\Common\\DataListing\\Entities\\ManageRolesListing::getModel<\/a>"],[100,1,"<a href=\"ManageRolesListing.php.html#24\">App\\Services\\Common\\DataListing\\Entities\\ManageRolesListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManageRolesListing.php.html#37\">App\\Services\\Common\\DataListing\\Entities\\ManageRolesListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManageRolesListing.php.html#42\">App\\Services\\Common\\DataListing\\Entities\\ManageRolesListing::getPermission<\/a>"],[100,1,"<a href=\"ManageSinglePushNotificationsListing.php.html#27\">App\\Services\\Common\\DataListing\\Entities\\ManageSinglePushNotificationsListing::getModel<\/a>"],[100,1,"<a href=\"ManageSinglePushNotificationsListing.php.html#32\">App\\Services\\Common\\DataListing\\Entities\\ManageSinglePushNotificationsListing::getFieldCollector<\/a>"],[100,1,"<a href=\"ManageSinglePushNotificationsListing.php.html#60\">App\\Services\\Common\\DataListing\\Entities\\ManageSinglePushNotificationsListing::defaultOrder<\/a>"],[100,1,"<a href=\"ManageSinglePushNotificationsListing.php.html#65\">App\\Services\\Common\\DataListing\\Entities\\ManageSinglePushNotificationsListing::getPermission<\/a>"],[100,1,"<a href=\"ManageSinglePushNotificationsListing.php.html#70\">App\\Services\\Common\\DataListing\\Entities\\ManageSinglePushNotificationsListing::predefinedFilters<\/a>"],[100,1,"<a href=\"ManageSinglePushNotificationsListing.php.html#77\">App\\Services\\Common\\DataListing\\Entities\\ManageSinglePushNotificationsListing::getListItems<\/a>"],[0,1,"<a href=\"ManageTelegraphBotsListing.php.html#20\">App\\Services\\Common\\DataListing\\Entities\\ManageTelegraphBotsListing::getModel<\/a>"],[0,1,"<a href=\"ManageTelegraphBotsListing.php.html#28\">App\\Services\\Common\\DataListing\\Entities\\ManageTelegraphBotsListing::getPermission<\/a>"],[0,1,"<a href=\"ManageTelegraphBotsListing.php.html#33\">App\\Services\\Common\\DataListing\\Entities\\ManageTelegraphBotsListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ManageTelegraphBotsListing.php.html#48\">App\\Services\\Common\\DataListing\\Entities\\ManageTelegraphBotsListing::defaultOrder<\/a>"],[0,1,"<a href=\"ManageTelegraphBotsListing.php.html#53\">App\\Services\\Common\\DataListing\\Entities\\ManageTelegraphBotsListing::getListItems<\/a>"],[0,1,"<a href=\"ManageUsersListing.php.html#23\">App\\Services\\Common\\DataListing\\Entities\\ManageUsersListing::getModel<\/a>"],[0,1,"<a href=\"ManageUsersListing.php.html#31\">App\\Services\\Common\\DataListing\\Entities\\ManageUsersListing::getPermission<\/a>"],[0,1,"<a href=\"ManageUsersListing.php.html#36\">App\\Services\\Common\\DataListing\\Entities\\ManageUsersListing::getFieldCollector<\/a>"],[0,1,"<a href=\"ManageUsersListing.php.html#58\">App\\Services\\Common\\DataListing\\Entities\\ManageUsersListing::defaultOrder<\/a>"],[0,1,"<a href=\"ManageUsersListing.php.html#63\">App\\Services\\Common\\DataListing\\Entities\\ManageUsersListing::getListItems<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

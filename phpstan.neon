@@ -1,0 +1,11 @@
+parameters:
+    phpVersion: 80300
+    level: 2
+    paths:
+        - app
+        - database
+    ignoreErrors:
+        - '#Unsafe usage of new static#'
+        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Builder<Illuminate\\Database\\Eloquent\\Model>::withTrashed\(\).#'
+    excludePaths:
+        - app/Services/Site/MobileDetect.php

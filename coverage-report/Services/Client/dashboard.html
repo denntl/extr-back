@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Services/Client</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Services</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Client</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Notification/NotificationService.php.html#8">App\Services\Client\Notification\NotificationService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Actions/ActionUrl.php.html#7">App\Services\Client\Telegraph\Actions\ActionUrl</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MainBotService.php.html#9">App\Services\Client\Telegraph\MainBotService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MessageSender.php.html#8">App\Services\Client\Telegraph\MessageSender</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Messages/MessageWithActions.php.html#11">App\Services\Client\Telegraph\Messages\MessageWithActions</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MyWebhookHandler.php.html#12">App\Services\Client\Telegraph\MyWebhookHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#7">App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Invite/InviteService.php.html#11">App\Services\Client\Invite\InviteService</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#11">App\Services\Client\TelegramBot\TelegramBotService</a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="User/UserService.php.html#13">App\Services\Client\User\UserService</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Statistic/StatisticService.php.html#9">App\Services\Client\Statistic\StatisticService</a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#14">App\Services\Client\Team\TeamService</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Telegraph/MainBotService.php.html#9">App\Services\Client\Telegraph\MainBotService</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Telegraph/MyWebhookHandler.php.html#12">App\Services\Client\Telegraph\MyWebhookHandler</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Telegraph/Messages/MessageWithActions.php.html#11">App\Services\Client\Telegraph\Messages\MessageWithActions</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="User/UserService.php.html#13">App\Services\Client\User\UserService</a></td><td class="text-right">37</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#7">App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Telegraph/Actions/ActionUrl.php.html#7">App\Services\Client\Telegraph\Actions\ActionUrl</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#14">App\Services\Client\Team\TeamService</a></td><td class="text-right">29</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#11">App\Services\Client\TelegramBot\TelegramBotService</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Notification/NotificationService.php.html#8">App\Services\Client\Notification\NotificationService</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Telegraph/MessageSender.php.html#8">App\Services\Client\Telegraph\MessageSender</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Invite/InviteService.php.html#11">App\Services\Client\Invite\InviteService</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Statistic/StatisticService.php.html#9">App\Services\Client\Statistic\StatisticService</a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Application/ApplicationService.php.html#266"><abbr title="App\Services\Client\Application\ApplicationService::getTeamsOrOwnApplications">getTeamsOrOwnApplications</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Invite/InviteService.php.html#31"><abbr title="App\Services\Client\Invite\InviteService::getByKey">getByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notification/NotificationService.php.html#10"><abbr title="App\Services\Client\Notification\NotificationService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Notification/NotificationService.php.html#15"><abbr title="App\Services\Client\Notification\NotificationService::activate">activate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#242"><abbr title="App\Services\Client\Team\TeamService::getTeamsForSelections">getTeamsForSelections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#61"><abbr title="App\Services\Client\TelegramBot\TelegramBotService::changeStatus">changeStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#78"><abbr title="App\Services\Client\TelegramBot\TelegramBotService::getInviteLink">getInviteLink</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Actions/ActionUrl.php.html#9"><abbr title="App\Services\Client\Telegraph\Actions\ActionUrl::url">url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Actions/ActionUrl.php.html#19"><abbr title="App\Services\Client\Telegraph\Actions\ActionUrl::make">make</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Actions/ActionUrl.php.html#24"><abbr title="App\Services\Client\Telegraph\Actions\ActionUrl::fromArray">fromArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MainBotService.php.html#14"><abbr title="App\Services\Client\Telegraph\MainBotService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MainBotService.php.html#19"><abbr title="App\Services\Client\Telegraph\MainBotService::auth">auth</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MessageSender.php.html#15"><abbr title="App\Services\Client\Telegraph\MessageSender::send">send</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Messages/MessageWithActions.php.html#20"><abbr title="App\Services\Client\Telegraph\Messages\MessageWithActions::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Messages/MessageWithActions.php.html#28"><abbr title="App\Services\Client\Telegraph\Messages\MessageWithActions::fromArray">fromArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Messages/MessageWithActions.php.html#37"><abbr title="App\Services\Client\Telegraph\Messages\MessageWithActions::messageType">messageType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/Messages/MessageWithActions.php.html#49"><abbr title="App\Services\Client\Telegraph\Messages\MessageWithActions::generateMessage">generateMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MyWebhookHandler.php.html#14"><abbr title="App\Services\Client\Telegraph\MyWebhookHandler::start">start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MyWebhookHandler.php.html#22"><abbr title="App\Services\Client\Telegraph\MyWebhookHandler::getChat">getChat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Telegraph/MyWebhookHandler.php.html#27"><abbr title="App\Services\Client\Telegraph\MyWebhookHandler::setupChat">setupChat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#16"><abbr title="App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#24"><abbr title="App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO::getIds">getIds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#69"><abbr title="App\Services\Client\User\UserService::getByTelegramId">getByTelegramId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#98"><abbr title="App\Services\Client\User\UserService::getByTeamIds">getByTeamIds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#33"><abbr title="App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO::unique">unique</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#50"><abbr title="App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO::getById">getById</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Statistic/StatisticService.php.html#25"><abbr title="App\Services\Client\Statistic\StatisticService::getDailyStatistic">getDailyStatistic</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#148"><abbr title="App\Services\Client\Team\TeamService::store">store</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="User/UserService.php.html#142"><abbr title="App\Services\Client\User\UserService::canDeactivateUser">canDeactivateUser</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#254"><abbr title="App\Services\Client\Application\ApplicationService::updateApplicationsOwners">updateApplicationsOwners</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#80"><abbr title="App\Services\Client\Team\TeamService::update">update</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Company/CompanyService.php.html#23"><abbr title="App\Services\Client\Company\CompanyService::get">get</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#28"><abbr title="App\Services\Client\Team\TeamService::getByPublicId">getByPublicId</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#213"><abbr title="App\Services\Client\Team\TeamService::updateMembersByPublicId">updateMembersByPublicId</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="User/UserService.php.html#43"><abbr title="App\Services\Client\User\UserService::getByPublicId">getByPublicId</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="User/UserService.php.html#56"><abbr title="App\Services\Client\User\UserService::getById">getById</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="User/UserService.php.html#77"><abbr title="App\Services\Client\User\UserService::getUsersCompanyOwnerAndTeamLead">getUsersCompanyOwnerAndTeamLead</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#199"><abbr title="App\Services\Client\Application\ApplicationService::clone">clone</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Telegraph/MainBotService.php.html#19"><abbr title="App\Services\Client\Telegraph\MainBotService::auth">auth</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Telegraph/MyWebhookHandler.php.html#27"><abbr title="App\Services\Client\Telegraph\MyWebhookHandler::setupChat">setupChat</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Telegraph/Messages/MessageWithActions.php.html#37"><abbr title="App\Services\Client\Telegraph\Messages\MessageWithActions::messageType">messageType</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Telegraph/Actions/ActionUrl.php.html#9"><abbr title="App\Services\Client\Telegraph\Actions\ActionUrl::url">url</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="User/UserService.php.html#142"><abbr title="App\Services\Client\User\UserService::canDeactivateUser">canDeactivateUser</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Invite/InviteService.php.html#31"><abbr title="App\Services\Client\Invite\InviteService::getByKey">getByKey</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Notification/NotificationService.php.html#15"><abbr title="App\Services\Client\Notification\NotificationService::activate">activate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#61"><abbr title="App\Services\Client\TelegramBot\TelegramBotService::changeStatus">changeStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Telegraph/MessageSender.php.html#15"><abbr title="App\Services\Client\Telegraph\MessageSender::send">send</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#148"><abbr title="App\Services\Client\Team\TeamService::store">store</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#80"><abbr title="App\Services\Client\Team\TeamService::update">update</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#33"><abbr title="App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO::unique">unique</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#254"><abbr title="App\Services\Client\Application\ApplicationService::updateApplicationsOwners">updateApplicationsOwners</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="User/UserService.php.html#77"><abbr title="App\Services\Client\User\UserService::getUsersCompanyOwnerAndTeamLead">getUsersCompanyOwnerAndTeamLead</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="User/DTO/UserCompanyOwnerTeamLeadDTO.php.html#50"><abbr title="App\Services\Client\User\DTO\UserCompanyOwnerTeamLeadDTO::getById">getById</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Statistic/StatisticService.php.html#25"><abbr title="App\Services\Client\Statistic\StatisticService::getDailyStatistic">getDailyStatistic</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Company/CompanyService.php.html#23"><abbr title="App\Services\Client\Company\CompanyService::get">get</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#28"><abbr title="App\Services\Client\Team\TeamService::getByPublicId">getByPublicId</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Team/TeamService.php.html#213"><abbr title="App\Services\Client\Team\TeamService::updateMembersByPublicId">updateMembersByPublicId</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#199"><abbr title="App\Services\Client\Application\ApplicationService::clone">clone</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="User/UserService.php.html#43"><abbr title="App\Services\Client\User\UserService::getByPublicId">getByPublicId</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="User/UserService.php.html#56"><abbr title="App\Services\Client\User\UserService::getById">getById</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.7</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.14</a> and <a href="https://phpunit.de/">PHPUnit 11.4.2</a> at Wed Jan 22 10:58:40 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([6,0,0,0,0,1,1,1,0,3,2,7], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([24,0,0,0,0,0,0,0,5,9,2,55], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[92.16867469879519,28,"<a href=\"Application\/ApplicationService.php.html#23\">App\\Services\\Client\\Application\\ApplicationService<\/a>"],[100,10,"<a href=\"Application\/CommentService.php.html#11\">App\\Services\\Client\\Application\\CommentService<\/a>"],[100,2,"<a href=\"Application\/DTO\/PostbackDTO.php.html#5\">App\\Services\\Client\\Application\\DTO\\PostbackDTO<\/a>"],[90,4,"<a href=\"Company\/CompanyService.php.html#10\">App\\Services\\Client\\Company\\CompanyService<\/a>"],[100,5,"<a href=\"Domain\/DomainService.php.html#10\">App\\Services\\Client\\Domain\\DomainService<\/a>"],[100,1,"<a href=\"Invite\/DTO\/ActionDTO.php.html#7\">App\\Services\\Client\\Invite\\DTO\\ActionDTO<\/a>"],[100,1,"<a href=\"Invite\/DTO\/InviteDTO.php.html#5\">App\\Services\\Client\\Invite\\DTO\\InviteDTO<\/a>"],[55.55555555555556,4,"<a href=\"Invite\/InviteService.php.html#11\">App\\Services\\Client\\Invite\\InviteService<\/a>"],[0,3,"<a href=\"Notification\/NotificationService.php.html#8\">App\\Services\\Client\\Notification\\NotificationService<\/a>"],[100,2,"<a href=\"Statistic\/DTO\/DailyDTO.php.html#5\">App\\Services\\Client\\Statistic\\DTO\\DailyDTO<\/a>"],[87.5,4,"<a href=\"Statistic\/StatisticService.php.html#9\">App\\Services\\Client\\Statistic\\StatisticService<\/a>"],[87.6923076923077,28,"<a href=\"Team\/TeamService.php.html#14\">App\\Services\\Client\\Team\\TeamService<\/a>"],[100,0,"<a href=\"TelegramBot\/Exceptions\/TelegramBotIsActiveException.php.html#7\">App\\Services\\Client\\TelegramBot\\Exceptions\\TelegramBotIsActiveException<\/a>"],[64.28571428571429,9,"<a href=\"TelegramBot\/TelegramBotService.php.html#11\">App\\Services\\Client\\TelegramBot\\TelegramBotService<\/a>"],[0,5,"<a href=\"Telegraph\/Actions\/ActionUrl.php.html#7\">App\\Services\\Client\\Telegraph\\Actions\\ActionUrl<\/a>"],[0,9,"<a href=\"Telegraph\/MainBotService.php.html#9\">App\\Services\\Client\\Telegraph\\MainBotService<\/a>"],[0,2,"<a href=\"Telegraph\/MessageSender.php.html#8\">App\\Services\\Client\\Telegraph\\MessageSender<\/a>"],[0,7,"<a href=\"Telegraph\/Messages\/MessageWithActions.php.html#11\">App\\Services\\Client\\Telegraph\\Messages\\MessageWithActions<\/a>"],[0,8,"<a href=\"Telegraph\/MyWebhookHandler.php.html#12\">App\\Services\\Client\\Telegraph\\MyWebhookHandler<\/a>"],[40.909090909090914,10,"<a href=\"User\/DTO\/UserCompanyOwnerTeamLeadDTO.php.html#7\">App\\Services\\Client\\User\\DTO\\UserCompanyOwnerTeamLeadDTO<\/a>"],[86.77685950413223,35,"<a href=\"User\/UserService.php.html#13\">App\\Services\\Client\\User\\UserService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Application\/ApplicationService.php.html#25\">App\\Services\\Client\\Application\\ApplicationService::getStatusList<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#33\">App\\Services\\Client\\Application\\ApplicationService::getGeoList<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#38\">App\\Services\\Client\\Application\\ApplicationService::getPlatformList<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#56\">App\\Services\\Client\\Application\\ApplicationService::getCategoryList<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#98\">App\\Services\\Client\\Application\\ApplicationService::getWhiteTypeList<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#112\">App\\Services\\Client\\Application\\ApplicationService::getLanguages<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#117\">App\\Services\\Client\\Application\\ApplicationService::__construct<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#121\">App\\Services\\Client\\Application\\ApplicationService::getPostbacks<\/a>"],[100,2,"<a href=\"Application\/ApplicationService.php.html#132\">App\\Services\\Client\\Application\\ApplicationService::getByPublicId<\/a>"],[96.55172413793103,9,"<a href=\"Application\/ApplicationService.php.html#152\">App\\Services\\Client\\Application\\ApplicationService::save<\/a>"],[88.46153846153845,2,"<a href=\"Application\/ApplicationService.php.html#199\">App\\Services\\Client\\Application\\ApplicationService::clone<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#234\">App\\Services\\Client\\Application\\ApplicationService::deactivate<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#246\">App\\Services\\Client\\Application\\ApplicationService::update<\/a>"],[80,4,"<a href=\"Application\/ApplicationService.php.html#254\">App\\Services\\Client\\Application\\ApplicationService::updateApplicationsOwners<\/a>"],[0,1,"<a href=\"Application\/ApplicationService.php.html#266\">App\\Services\\Client\\Application\\ApplicationService::getTeamsOrOwnApplications<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#13\">App\\Services\\Client\\Application\\CommentService::__construct<\/a>"],[100,3,"<a href=\"Application\/CommentService.php.html#17\">App\\Services\\Client\\Application\\CommentService::getCommonComments<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#40\">App\\Services\\Client\\Application\\CommentService::clone<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#56\">App\\Services\\Client\\Application\\CommentService::create<\/a>"],[100,2,"<a href=\"Application\/CommentService.php.html#68\">App\\Services\\Client\\Application\\CommentService::getById<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#77\">App\\Services\\Client\\Application\\CommentService::delete<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#84\">App\\Services\\Client\\Application\\CommentService::update<\/a>"],[100,1,"<a href=\"Application\/DTO\/PostbackDTO.php.html#7\">App\\Services\\Client\\Application\\DTO\\PostbackDTO::__construct<\/a>"],[100,1,"<a href=\"Application\/DTO\/PostbackDTO.php.html#11\">App\\Services\\Client\\Application\\DTO\\PostbackDTO::toArray<\/a>"],[100,1,"<a href=\"Company\/CompanyService.php.html#15\">App\\Services\\Client\\Company\\CompanyService::__construct<\/a>"],[83.33333333333334,2,"<a href=\"Company\/CompanyService.php.html#23\">App\\Services\\Client\\Company\\CompanyService::get<\/a>"],[100,1,"<a href=\"Company\/CompanyService.php.html#39\">App\\Services\\Client\\Company\\CompanyService::update<\/a>"],[100,1,"<a href=\"Domain\/DomainService.php.html#12\">App\\Services\\Client\\Domain\\DomainService::getDomainList<\/a>"],[100,1,"<a href=\"Domain\/DomainService.php.html#21\">App\\Services\\Client\\Domain\\DomainService::getStatusList<\/a>"],[100,1,"<a href=\"Domain\/DomainService.php.html#29\">App\\Services\\Client\\Domain\\DomainService::store<\/a>"],[100,1,"<a href=\"Domain\/DomainService.php.html#34\">App\\Services\\Client\\Domain\\DomainService::toggleStatus<\/a>"],[100,1,"<a href=\"Domain\/DomainService.php.html#41\">App\\Services\\Client\\Domain\\DomainService::getUsersByDomain<\/a>"],[100,1,"<a href=\"Invite\/DTO\/ActionDTO.php.html#9\">App\\Services\\Client\\Invite\\DTO\\ActionDTO::__construct<\/a>"],[100,1,"<a href=\"Invite\/DTO\/InviteDTO.php.html#7\">App\\Services\\Client\\Invite\\DTO\\InviteDTO::__construct<\/a>"],[100,1,"<a href=\"Invite\/InviteService.php.html#13\">App\\Services\\Client\\Invite\\InviteService::__construct<\/a>"],[100,1,"<a href=\"Invite\/InviteService.php.html#17\">App\\Services\\Client\\Invite\\InviteService::generateInvite<\/a>"],[0,2,"<a href=\"Invite\/InviteService.php.html#31\">App\\Services\\Client\\Invite\\InviteService::getByKey<\/a>"],[0,1,"<a href=\"Notification\/NotificationService.php.html#10\">App\\Services\\Client\\Notification\\NotificationService::__construct<\/a>"],[0,2,"<a href=\"Notification\/NotificationService.php.html#15\">App\\Services\\Client\\Notification\\NotificationService::activate<\/a>"],[100,1,"<a href=\"Statistic\/DTO\/DailyDTO.php.html#7\">App\\Services\\Client\\Statistic\\DTO\\DailyDTO::__construct<\/a>"],[100,1,"<a href=\"Statistic\/DTO\/DailyDTO.php.html#11\">App\\Services\\Client\\Statistic\\DTO\\DailyDTO::toArray<\/a>"],[100,1,"<a href=\"Statistic\/StatisticService.php.html#11\">App\\Services\\Client\\Statistic\\StatisticService::__construct<\/a>"],[100,1,"<a href=\"Statistic\/StatisticService.php.html#15\">App\\Services\\Client\\Statistic\\StatisticService::getDailyStatisticModel<\/a>"],[77.77777777777779,2,"<a href=\"Statistic\/StatisticService.php.html#25\">App\\Services\\Client\\Statistic\\StatisticService::getDailyStatistic<\/a>"],[100,1,"<a href=\"Team\/TeamService.php.html#19\">App\\Services\\Client\\Team\\TeamService::__construct<\/a>"],[83.33333333333334,2,"<a href=\"Team\/TeamService.php.html#28\">App\\Services\\Client\\Team\\TeamService::getByPublicId<\/a>"],[100,1,"<a href=\"Team\/TeamService.php.html#41\">App\\Services\\Client\\Team\\TeamService::getByTeamLeadId<\/a>"],[100,1,"<a href=\"Team\/TeamService.php.html#53\">App\\Services\\Client\\Team\\TeamService::getObjectForEdit<\/a>"],[100,1,"<a href=\"Team\/TeamService.php.html#67\">App\\Services\\Client\\Team\\TeamService::create<\/a>"],[81.81818181818183,5,"<a href=\"Team\/TeamService.php.html#80\">App\\Services\\Client\\Team\\TeamService::update<\/a>"],[100,3,"<a href=\"Team\/TeamService.php.html#119\">App\\Services\\Client\\Team\\TeamService::removeRoleOnUpdateOrDelete<\/a>"],[77.77777777777779,5,"<a href=\"Team\/TeamService.php.html#148\">App\\Services\\Client\\Team\\TeamService::store<\/a>"],[100,2,"<a href=\"Team\/TeamService.php.html#186\">App\\Services\\Client\\Team\\TeamService::destroy<\/a>"],[84.21052631578947,2,"<a href=\"Team\/TeamService.php.html#213\">App\\Services\\Client\\Team\\TeamService::updateMembersByPublicId<\/a>"],[0,1,"<a href=\"Team\/TeamService.php.html#242\">App\\Services\\Client\\Team\\TeamService::getTeamsForSelections<\/a>"],[100,1,"<a href=\"Team\/TeamService.php.html#253\">App\\Services\\Client\\Team\\TeamService::getTeamLeaderSelection<\/a>"],[100,2,"<a href=\"Team\/TeamService.php.html#265\">App\\Services\\Client\\Team\\TeamService::getMembersSelection<\/a>"],[100,1,"<a href=\"Team\/TeamService.php.html#288\">App\\Services\\Client\\Team\\TeamService::getMembersByPublicId<\/a>"],[100,1,"<a href=\"TelegramBot\/TelegramBotService.php.html#13\">App\\Services\\Client\\TelegramBot\\TelegramBotService::__construct<\/a>"],[100,2,"<a href=\"TelegramBot\/TelegramBotService.php.html#20\">App\\Services\\Client\\TelegramBot\\TelegramBotService::get<\/a>"],[100,1,"<a href=\"TelegramBot\/TelegramBotService.php.html#36\">App\\Services\\Client\\TelegramBot\\TelegramBotService::create<\/a>"],[100,2,"<a href=\"TelegramBot\/TelegramBotService.php.html#47\">App\\Services\\Client\\TelegramBot\\TelegramBotService::update<\/a>"],[0,2,"<a href=\"TelegramBot\/TelegramBotService.php.html#61\">App\\Services\\Client\\TelegramBot\\TelegramBotService::changeStatus<\/a>"],[0,1,"<a href=\"TelegramBot\/TelegramBotService.php.html#78\">App\\Services\\Client\\TelegramBot\\TelegramBotService::getInviteLink<\/a>"],[0,3,"<a href=\"Telegraph\/Actions\/ActionUrl.php.html#9\">App\\Services\\Client\\Telegraph\\Actions\\ActionUrl::url<\/a>"],[0,1,"<a href=\"Telegraph\/Actions\/ActionUrl.php.html#19\">App\\Services\\Client\\Telegraph\\Actions\\ActionUrl::make<\/a>"],[0,1,"<a href=\"Telegraph\/Actions\/ActionUrl.php.html#24\">App\\Services\\Client\\Telegraph\\Actions\\ActionUrl::fromArray<\/a>"],[0,1,"<a href=\"Telegraph\/MainBotService.php.html#14\">App\\Services\\Client\\Telegraph\\MainBotService::__construct<\/a>"],[0,8,"<a href=\"Telegraph\/MainBotService.php.html#19\">App\\Services\\Client\\Telegraph\\MainBotService::auth<\/a>"],[0,2,"<a href=\"Telegraph\/MessageSender.php.html#15\">App\\Services\\Client\\Telegraph\\MessageSender::send<\/a>"],[0,1,"<a href=\"Telegraph\/Messages\/MessageWithActions.php.html#20\">App\\Services\\Client\\Telegraph\\Messages\\MessageWithActions::__construct<\/a>"],[0,1,"<a href=\"Telegraph\/Messages\/MessageWithActions.php.html#28\">App\\Services\\Client\\Telegraph\\Messages\\MessageWithActions::fromArray<\/a>"],[0,4,"<a href=\"Telegraph\/Messages\/MessageWithActions.php.html#37\">App\\Services\\Client\\Telegraph\\Messages\\MessageWithActions::messageType<\/a>"],[0,1,"<a href=\"Telegraph\/Messages\/MessageWithActions.php.html#49\">App\\Services\\Client\\Telegraph\\Messages\\MessageWithActions::generateMessage<\/a>"],[0,1,"<a href=\"Telegraph\/MyWebhookHandler.php.html#14\">App\\Services\\Client\\Telegraph\\MyWebhookHandler::start<\/a>"],[0,1,"<a href=\"Telegraph\/MyWebhookHandler.php.html#22\">App\\Services\\Client\\Telegraph\\MyWebhookHandler::getChat<\/a>"],[0,6,"<a href=\"Telegraph\/MyWebhookHandler.php.html#27\">App\\Services\\Client\\Telegraph\\MyWebhookHandler::setupChat<\/a>"],[100,1,"<a href=\"User\/DTO\/UserCompanyOwnerTeamLeadDTO.php.html#9\">App\\Services\\Client\\User\\DTO\\UserCompanyOwnerTeamLeadDTO::__construct<\/a>"],[0,1,"<a href=\"User\/DTO\/UserCompanyOwnerTeamLeadDTO.php.html#16\">App\\Services\\Client\\User\\DTO\\UserCompanyOwnerTeamLeadDTO::toArray<\/a>"],[0,1,"<a href=\"User\/DTO\/UserCompanyOwnerTeamLeadDTO.php.html#24\">App\\Services\\Client\\User\\DTO\\UserCompanyOwnerTeamLeadDTO::getIds<\/a>"],[71.42857142857143,4,"<a href=\"User\/DTO\/UserCompanyOwnerTeamLeadDTO.php.html#33\">App\\Services\\Client\\User\\DTO\\UserCompanyOwnerTeamLeadDTO::unique<\/a>"],[75,3,"<a href=\"User\/DTO\/UserCompanyOwnerTeamLeadDTO.php.html#50\">App\\Services\\Client\\User\\DTO\\UserCompanyOwnerTeamLeadDTO::getById<\/a>"],[100,1,"<a href=\"User\/UserService.php.html#18\">App\\Services\\Client\\User\\UserService::__construct<\/a>"],[100,2,"<a href=\"User\/UserService.php.html#25\">App\\Services\\Client\\User\\UserService::getUsersForSelections<\/a>"],[85.71428571428571,2,"<a href=\"User\/UserService.php.html#43\">App\\Services\\Client\\User\\UserService::getByPublicId<\/a>"],[85.71428571428571,2,"<a href=\"User\/UserService.php.html#56\">App\\Services\\Client\\User\\UserService::getById<\/a>"],[0,1,"<a href=\"User\/UserService.php.html#69\">App\\Services\\Client\\User\\UserService::getByTelegramId<\/a>"],[85.71428571428571,4,"<a href=\"User\/UserService.php.html#77\">App\\Services\\Client\\User\\UserService::getUsersCompanyOwnerAndTeamLead<\/a>"],[0,1,"<a href=\"User\/UserService.php.html#98\">App\\Services\\Client\\User\\UserService::getByTeamIds<\/a>"],[100,1,"<a href=\"User\/UserService.php.html#106\">App\\Services\\Client\\User\\UserService::update<\/a>"],[100,1,"<a href=\"User\/UserService.php.html#114\">App\\Services\\Client\\User\\UserService::getUsersActiveApplications<\/a>"],[100,1,"<a href=\"User\/UserService.php.html#130\">App\\Services\\Client\\User\\UserService::isCompanyOwner<\/a>"],[78.57142857142857,10,"<a href=\"User\/UserService.php.html#142\">App\\Services\\Client\\User\\UserService::canDeactivateUser<\/a>"],[100,5,"<a href=\"User\/UserService.php.html#175\">App\\Services\\Client\\User\\UserService::prepareToDeactivate<\/a>"],[93.33333333333333,4,"<a href=\"User\/UserService.php.html#210\">App\\Services\\Client\\User\\UserService::deactivate<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

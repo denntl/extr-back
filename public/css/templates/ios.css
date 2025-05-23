@@ -1,0 +1,615 @@
+.appDownload {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 106px 1fr;
+    grid-gap: 15px;
+    padding: 20px; }
+.appDownload .appAvatar {
+    border-radius: 15px; }
+.appDownload .appDownload__panel .appDownload__title {
+    font-size: 20px;
+    font-weight: 600; }
+.appDownload .appDownload__panel .appDownload__subtitle {
+    color: #8a8a8e;
+    font-weight: 300;
+    margin: 5px 0; }
+.appDownload .appDownload__panel .appDownload__btnGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+.appDownload .appDownload__panel .appDownload__btnGroup .appDownload__loadBtn {
+    display: block;
+    width: 90px;
+    background: #007aff;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    padding: 7px 15px;
+    transition: all linear .2s;
+    overflow: hidden; }
+.appDownload .appDownload__panel .appDownload__btnGroup .appDownload__loadBtn span {
+    color: #ffffff; }
+.appDownload .appDownload__panel .appDownload__btnGroup .appDownload__warning {
+    width: 40px;
+    font-size: 9px;
+    font-weight: 300;
+    color: #8a8a8e;
+    transition: all linear .2s; }
+.appDownload .appDownload__panel .appDownload__btnGroup .appDownload__share {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    outline: none; }
+
+.appAchievements {
+    padding: 1rem;
+    padding-right: 0;
+    margin: auto; }
+.appAchievements .appAchievements__list {
+    list-style: none;
+    display: flex;
+    border-top: 1px solid #c6c6c8;
+    width: 100%;
+    overflow-x: auto; }
+.appAchievements .appAchievements__list .appAchievements__listItem {
+    padding: 10px 25px;
+    position: relative; }
+.appAchievements .appAchievements__list .appAchievements__listItem:after {
+    content: '';
+    height: 36px;
+    width: 1px;
+    background: #c6c6c8;
+    position: absolute;
+    right: 0;
+    top: 22px; }
+.appAchievements .appAchievements__list .appAchievements__listItem:first-child {
+    padding-left: 0; }
+.appAchievements .appAchievements__list .appAchievements__listItem:last-child:after {
+    display: none; }
+.appAchievements .appAchievements__list .appAchievements__listItem .appAchievements__title {
+    font-size: 10px;
+    color: #b1b1b4;
+    white-space: nowrap;
+    text-align: center; }
+.appAchievements .appAchievements__list .appAchievements__listItem .appAchievements__mark {
+    text-align: center;
+    color: #8e8e93;
+    padding: 5px 0; }
+.appAchievements .appAchievements__list .appAchievements__listItem .appAchievements__mark .appAchievements__mark_position {
+    font-size: 10px;
+    vertical-align: super;
+    font-weight: 400; }
+.appAchievements .appAchievements__list .appAchievements__listItem .appAchievements__descript {
+    font-size: 12px;
+    color: #b1b1b4;
+    white-space: nowrap;
+    text-align: center; }
+.appAchievements .appAchievements__list .appAchievements__listItem .appAchievements__grade {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2px; }
+
+.appGallery {
+    margin: auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto; }
+.appGallery .appGalleryPic {
+    border-radius: 25px; }
+
+.appReview {
+    margin: auto;
+    padding: 1rem; }
+.appReview hr {
+    margin-bottom: 1rem;
+    border: 1px solid #c6c6c8;
+    border-bottom: transparent; }
+.appReview .appReview__title {
+    display: flex;
+    justify-content: space-between; }
+.appReview .appReview__title .appReview__allComments {
+    background: none;
+    border: none;
+    outline: none;
+    color: #007aff;
+    font-size: 14px; }
+.appReview .appReview__degree {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+    margin-top: 1rem; }
+.appReview .appReview__degree .appReview__leftBlock .appReview__currentDegree {
+    font-size: 54px;
+    font-weight: 700;
+    color: #4a4a4d;
+    line-height: 57px; }
+.appReview .appReview__degree .appReview__rightBlock .appReview__rating {
+    list-style: none; }
+.appReview .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem {
+    margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+    gap: 1rem; }
+.appReview .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__ratingItem_stars {
+    list-style: none;
+    display: flex;
+    justify-content: end; }
+.appReview .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__ratingItem_stars .appReview__ratingItem_star {
+    display: flex;
+    align-items: center; }
+.appReview .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__ratingItem_stars .appReview__ratingItem_star img {
+    width: 8px; }
+.appReview .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__rateScale {
+    height: 4px;
+    width: 100%;
+    background: #e4e4e6;
+    border-radius: 20px;
+    position: relative; }
+.appReview .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__rateScale .appReview__rateValue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    background: #7f7f83;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; }
+.appReview .appReview__degreeSubtitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0; }
+.appReview .appReview__degreeSubtitle p {
+    color: #8a8a8d; }
+.appReview .appReview__degreeSubtitle p:first-child {
+    padding-left: 1.6rem; }
+.appReview .appReview__comment {
+    background: #f2f2f6;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px; }
+.appReview .appReview__comment .appReview__commentTitle {
+    display: flex;
+    justify-content: space-between; }
+.appReview .appReview__comment .appReview__commentTitle p {
+    color: #8a8a8d; }
+.appReview .appReview__comment .appReview__commentRate {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0; }
+.appReview .appReview__comment .appReview__commentRate .appReview__commentStars {
+    list-style: none;
+    display: flex; }
+.appReview .appReview__comment .appReview__commentRate .appReview__commentStars .appReview__commentStarsItem svg {
+    stroke: #FE8105; }
+.appReview .appReview__comment .appReview__commentRate .appReview__commentStars .appReview__commentStarsItem.active svg {
+    fill: #FE8105; }
+.appReview .appReview__comment .appReview__commentRate p {
+    color: #8a8a8d; }
+.appReview .appReview__comment .appReview__commentText {
+    font-size: 13px;
+    max-height: 125px; }
+
+.appReview__comments {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 7;
+    overflow: auto;
+    padding: 1rem;
+    margin: auto;
+    transform: translateX(-600px);
+    transition: all linear .8s; }
+.appReview__comments .appReview__degree {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+    margin-top: 1rem; }
+.appReview__comments .appReview__degree .appReview__leftBlock .appReview__currentDegree {
+    font-size: 54px;
+    font-weight: 700;
+    color: #4a4a4d;
+    line-height: 57px; }
+.appReview__comments .appReview__degree .appReview__rightBlock .appReview__rating {
+    list-style: none; }
+.appReview__comments .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem {
+    margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+    gap: 1rem; }
+.appReview__comments .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__ratingItem_stars {
+    list-style: none;
+    display: flex;
+    justify-content: end; }
+.appReview__comments .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__ratingItem_stars .appReview__ratingItem_star {
+    display: flex;
+    align-items: center; }
+.appReview__comments .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__ratingItem_stars .appReview__ratingItem_star img {
+    width: 8px; }
+.appReview__comments .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__rateScale {
+    height: 4px;
+    width: 100%;
+    background: #e4e4e6;
+    border-radius: 20px;
+    position: relative; }
+.appReview__comments .appReview__degree .appReview__rightBlock .appReview__rating .appReview__ratingItem .appReview__rateScale .appReview__rateValue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    background: #7f7f83;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; }
+.appReview__comments .appReview__degreeSubtitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0; }
+.appReview__comments .appReview__degreeSubtitle p {
+    color: #8a8a8d; }
+.appReview__comments .appReview__degreeSubtitle p:first-child {
+    padding-left: 1.6rem; }
+.appReview__comments .appReview__comment {
+    background: #f2f2f6;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px; }
+.appReview__comments .appReview__comment .appReview__commentTitle {
+    display: flex;
+    justify-content: space-between; }
+.appReview__comments .appReview__comment .appReview__commentTitle p {
+    color: #8a8a8d; }
+.appReview__comments .appReview__comment .appReview__commentRate {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0; }
+.appReview__comments .appReview__comment .appReview__commentRate .appReview__commentStars {
+    list-style: none;
+    display: flex; }
+.appReview__comments .appReview__comment .appReview__commentRate .appReview__commentStars .appReview__commentStarsItem svg {
+    stroke: #FE8105; }
+.appReview__comments .appReview__comment .appReview__commentRate .appReview__commentStars .appReview__commentStarsItem.active svg {
+    fill: #FE8105; }
+.appReview__comments .appReview__comment .appReview__commentRate p {
+    color: #8a8a8d; }
+.appReview__comments .appReview__comment .appReview__commentText {
+    font-size: 13px;
+    max-height: 125px; }
+.appReview__comments h2 {
+    margin: 1rem 0; }
+.appReview__comments .commentsReturn {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+.appReview__comments .commentsReturn span {
+    color: #007aff; }
+
+.appReview__comments.opened {
+    transform: translateX(0px); }
+
+.appUpdates {
+    margin: auto;
+    padding: 1rem; }
+.appUpdates hr {
+    margin-bottom: 1rem;
+    border: 1px solid #c6c6c8;
+    border-bottom: transparent; }
+.appUpdates .appUpdates__title {
+    display: flex;
+    justify-content: space-between; }
+.appUpdates .appUpdates__title a {
+    text-decoration: none;
+    color: #007aff; }
+.appUpdates .appUpdates__versions {
+    display: flex;
+    justify-content: space-between;
+    color: #8a8a8d;
+    font-weight: 300;
+    font-size: 14px; }
+.appUpdates .appUpdates__txt {
+    margin: 1rem 0; }
+
+.appConfidence {
+    margin: auto;
+    padding: 1rem; }
+.appConfidence hr {
+    margin-bottom: 1rem;
+    border: 1px solid #c6c6c8;
+    border-bottom: transparent; }
+.appConfidence .appConfidence__title {
+    display: flex;
+    justify-content: space-between; }
+.appConfidence .appConfidence__title a {
+    text-decoration: none;
+    color: #007aff; }
+.appConfidence .appConfidence__politics {
+    margin: 1rem 0; }
+.appConfidence .appConfidence__politics a {
+    text-decoration: none;
+    color: #007aff; }
+.appConfidence .appConfidence__userDataTracking {
+    padding: 1rem;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+.appConfidence .appConfidence__userDataTracking h3 {
+    text-align: center; }
+.appConfidence .appConfidence__userDataTracking p {
+    text-align: center;
+    color: #8a8a8e; }
+.appConfidence .appConfidence__userDataTracking .appConfidence__userDataTracking_list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+    margin: 1rem 0; }
+.appConfidence .appConfidence__userDataTracking .appConfidence__userDataTracking_list .appConfidence__userDataTracking_listItem {
+    display: flex;
+    gap: 10px;
+    font-size: 14px; }
+.appConfidence .appConfidence__userData {
+    padding: 1rem;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0; }
+.appConfidence .appConfidence__userData h3 {
+    text-align: center; }
+.appConfidence .appConfidence__userData p {
+    text-align: center;
+    color: #8a8a8e; }
+.appConfidence .appConfidence__userData .appConfidence__userData_list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+    margin: 1rem 0; }
+.appConfidence .appConfidence__userData .appConfidence__userData_list .appConfidence__userData_listItem {
+    display: flex;
+    gap: 10px;
+    font-size: 14px; }
+.appConfidence .appConfidence__userTerms a {
+    text-decoration: none;
+    color: #007aff; }
+
+.appInfo {
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 2rem; }
+.appInfo hr {
+    margin-bottom: 1rem;
+    border: 1px solid #c6c6c8;
+    border-bottom: transparent; }
+.appInfo .appInfo__infoList {
+    list-style: none; }
+.appInfo .appInfo__infoList .appInfo__infoRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c6c6c8; }
+.appInfo .appInfo__infoList .appInfo__infoRow .appInfo__infoRow_name {
+    color: #8a8a8d;
+    padding: 14px 0; }
+.appInfo .appInfo__infoList .appInfo__infoRow a.appInfo__infoRow_name {
+    text-decoration: none;
+    color: #007aff; }
+.appInfo .appInfo__infoList .appInfo__infoRow .appInfo__infoList {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif; }
+
+.mobContainer {
+    width: 100%;
+    max-width: 500px; }
+
+.appHeader {
+    margin: 0 auto;
+    position: relative;
+    display: none; }
+.appHeader .header__returnBtn {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 32px;
+    height: 32px; }
+.appHeader .appHeader__img {
+    width: 100%; }
+
+*::-webkit-scrollbar {
+    width: 7px;
+    height: 7px; }
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    margin: 5px 0; }
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border: 3px solid rgba(88, 18, 18, 0); }
+
+.appSupporting {
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    padding: 1rem; }
+.appSupporting .appSupportingIcons {
+    display: flex;
+    gap: 12px; }
+.appSupporting .appSupporting__devices {
+    color: #8a8a8d;
+    font-size: 12px;
+    max-width: 170px; }
+
+.appAnotation {
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #8a8a8e; }
+.appAnotation .appAnotation__description {
+    color: #000000;
+    margin-bottom: 15px; }
+.appAnotation .appAnotation__dev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+.appAnotation .appAnotation__dev .appAnotation__devName {
+    color: #007aff; }
+
+.custom-loader {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent;
+    border-right-color: #8a8a8d;
+    border-top-color: #8a8a8d;
+    border-bottom-color: #8a8a8d;
+    animation: s2 1s infinite linear; }
+
+@keyframes s2 {
+    to {
+        transform: rotate(1turn); } }
+.appMobHeader {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    justify-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    z-index: 5; }
+.appMobHeader .appMobHeader__returnBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #007aff;
+    font-size: 12px; }
+.appMobHeader .appMobHeader__logo {
+    width: 40px;
+    border-radius: 10px;
+    margin: auto; }
+.appMobHeader .appMobHeader__downloadBlock {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0; }
+.appMobHeader .appMobHeader__downloadBlock .appMobHeader__warn {
+    width: 60px;
+    font-size: 10px;
+    color: #8a8a8e; }
+.appMobHeader .appMobHeader__downloadBlock .appDownload__loadBtn {
+    display: block;
+    background: #007aff;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    padding: 4px 10px;
+    transition: all linear .2s;
+    overflow: hidden; }
+.appMobHeader .appMobHeader__downloadBlock .appDownload__loadBtn span {
+    color: #ffffff;
+    font-size: 12px; }
+
+/*# sourceMappingURL=main.css.map */
+.appDownload.mobContainer > img {
+    max-width: 106px;
+    height: 106px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imageContainer {
+    height: 106px;
+    width: 106px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.imageContainer > img {
+    height: 100%;
+    margin: auto;
+}
+.appGallery__galleryPic {
+    height: 190px;
+}
+.appAnotation__description {
+    overflow: hidden;
+}
+.appDownload.mobContainer {
+    height: 146px;
+}
+.appDownload__subtitle {
+    height: 42px;
+}
+.appAchievements.mobContainer {
+    padding-top: 0px;
+}
+.topApplications .appAnotation__dev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.topApplicationsItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topApplicationsItemDescription {
+    width: 100%;
+    margin-left: 20px;
+}
+.topApplicationsItem img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+.topApplicationsItemCategory {
+    color: #8a8a8d;
+}
+.topApplicationsItem .topApplicationsItemLink {
+    display: block;
+    min-width: 90px;
+    color: #007aff;
+    background: #f2f2f6;
+    font-size: 12px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    padding: 7px 10px;
+    transition: all linear .2s;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+}
+.topApplicationsItem .topApplicationsItemLink span {
+    font-size: 12px;
+}

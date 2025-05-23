@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Services/Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Services</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Site</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="MobileDetect.php.html#197">App\Services\Site\MobileDetect</a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="SiteRequestService.php.html#9">App\Services\Site\SiteRequestService</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="ApplicationService.php.html#9">App\Services\Site\ApplicationService</a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#25">App\Services\Site\Pwa\PWAService</a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="MobileDetect.php.html#197">App\Services\Site\MobileDetect</a></td><td class="text-right">2638</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#25">App\Services\Site\Pwa\PWAService</a></td><td class="text-right">35</td></tr>
+       <tr><td><a href="SiteRequestService.php.html#9">App\Services\Site\SiteRequestService</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="ApplicationService.php.html#9">App\Services\Site\ApplicationService</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="MobileDetect.php.html#826"><abbr title="App\Services\Site\MobileDetect::getScriptVersion">getScriptVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#864"><abbr title="App\Services\Site\MobileDetect::getHttpHeaders">getHttpHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#879"><abbr title="App\Services\Site\MobileDetect::getHttpHeader">getHttpHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#900"><abbr title="App\Services\Site\MobileDetect::getMobileHeaders">getMobileHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#962"><abbr title="App\Services\Site\MobileDetect::prepareUserAgent">prepareUserAgent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1007"><abbr title="App\Services\Site\MobileDetect::getUserAgent">getUserAgent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1012"><abbr title="App\Services\Site\MobileDetect::getMatchingRegex">getMatchingRegex</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1017"><abbr title="App\Services\Site\MobileDetect::getMatchesArray">getMatchesArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1027"><abbr title="App\Services\Site\MobileDetect::getPhoneDevices">getPhoneDevices</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1037"><abbr title="App\Services\Site\MobileDetect::getTabletDevices">getTabletDevices</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1047"><abbr title="App\Services\Site\MobileDetect::getUserAgents">getUserAgents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1057"><abbr title="App\Services\Site\MobileDetect::getBrowsers">getBrowsers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1089"><abbr title="App\Services\Site\MobileDetect::getOperatingSystems">getOperatingSystems</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1101"><abbr title="App\Services\Site\MobileDetect::checkHttpHeadersForMobile">checkHttpHeadersForMobile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1150"><abbr title="App\Services\Site\MobileDetect::matchDetectionRulesAgainstUA">matchDetectionRulesAgainstUA</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1202"><abbr title="App\Services\Site\MobileDetect::isMobile">isMobile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1239"><abbr title="App\Services\Site\MobileDetect::isTablet">isTablet</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1271"><abbr title="App\Services\Site\MobileDetect::is">is</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1325"><abbr title="App\Services\Site\MobileDetect::getProperties">getProperties</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1339"><abbr title="App\Services\Site\MobileDetect::prepareVersionNo">prepareVersionNo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1364"><abbr title="App\Services\Site\MobileDetect::version">version</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#156"><abbr title="App\Services\Site\Pwa\PWAService::getClientClickExternalId">getClientClickExternalId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#161"><abbr title="App\Services\Site\Pwa\PWAService::getClick">getClick</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1300"><abbr title="App\Services\Site\MobileDetect::match">match</abbr></a></td><td class="text-right">18%</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#88"><abbr title="App\Services\Site\Pwa\PWAService::resolveLanding">resolveLanding</abbr></a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#925"><abbr title="App\Services\Site\MobileDetect::setCfHeaders">setCfHeaders</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#975"><abbr title="App\Services\Site\MobileDetect::setUserAgent">setUserAgent</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1132"><abbr title="App\Services\Site\MobileDetect::__call">__call</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="SiteRequestService.php.html#33"><abbr title="App\Services\Site\SiteRequestService::__construct">__construct</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="ApplicationService.php.html#11"><abbr title="App\Services\Site\ApplicationService::getApplication">getApplication</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="ApplicationService.php.html#35"><abbr title="App\Services\Site\ApplicationService::fillApplicationForPreview">fillApplicationForPreview</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#837"><abbr title="App\Services\Site\MobileDetect::setHttpHeaders">setHttpHeaders</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1175"><abbr title="App\Services\Site\MobileDetect::matchUAAgainstKey">matchUAAgainstKey</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#124"><abbr title="App\Services\Site\Pwa\PWAService::resolveClient">resolveClient</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Pixel/DTO/PixelConversionDTO.php.html#25"><abbr title="App\Services\Site\Pixel\DTO\PixelConversionDTO::getFromClick">getFromClick</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="MobileDetect.php.html#1364"><abbr title="App\Services\Site\MobileDetect::version">version</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1101"><abbr title="App\Services\Site\MobileDetect::checkHttpHeadersForMobile">checkHttpHeadersForMobile</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1202"><abbr title="App\Services\Site\MobileDetect::isMobile">isMobile</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1239"><abbr title="App\Services\Site\MobileDetect::isTablet">isTablet</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#88"><abbr title="App\Services\Site\Pwa\PWAService::resolveLanding">resolveLanding</abbr></a></td><td class="text-right">35</td></tr>
+       <tr><td><a href="MobileDetect.php.html#879"><abbr title="App\Services\Site\MobileDetect::getHttpHeader">getHttpHeader</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1150"><abbr title="App\Services\Site\MobileDetect::matchDetectionRulesAgainstUA">matchDetectionRulesAgainstUA</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1300"><abbr title="App\Services\Site\MobileDetect::match">match</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1271"><abbr title="App\Services\Site\MobileDetect::is">is</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SiteRequestService.php.html#33"><abbr title="App\Services\Site\SiteRequestService::__construct">__construct</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="MobileDetect.php.html#975"><abbr title="App\Services\Site\MobileDetect::setUserAgent">setUserAgent</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Pixel/DTO/PixelConversionDTO.php.html#25"><abbr title="App\Services\Site\Pixel\DTO\PixelConversionDTO::getFromClick">getFromClick</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1339"><abbr title="App\Services\Site\MobileDetect::prepareVersionNo">prepareVersionNo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MobileDetect.php.html#925"><abbr title="App\Services\Site\MobileDetect::setCfHeaders">setCfHeaders</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="MobileDetect.php.html#837"><abbr title="App\Services\Site\MobileDetect::setHttpHeaders">setHttpHeaders</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Pwa/PWAService.php.html#124"><abbr title="App\Services\Site\Pwa\PWAService::resolveClient">resolveClient</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1175"><abbr title="App\Services\Site\MobileDetect::matchUAAgainstKey">matchUAAgainstKey</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="MobileDetect.php.html#1132"><abbr title="App\Services\Site\MobileDetect::__call">__call</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ApplicationService.php.html#11"><abbr title="App\Services\Site\ApplicationService::getApplication">getApplication</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="ApplicationService.php.html#35"><abbr title="App\Services\Site\ApplicationService::fillApplicationForPreview">fillApplicationForPreview</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.7</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.14</a> and <a href="https://phpunit.de/">PHPUnit 11.4.2</a> at Wed Jan 22 10:58:40 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,1,0,0,0,0,3,1,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([23,0,1,0,0,1,0,2,1,7,1,22], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[88.88888888888889,6,"<a href=\"ApplicationService.php.html#9\">App\\Services\\Site\\ApplicationService<\/a>"],[30.405405405405407,87,"<a href=\"MobileDetect.php.html#197\">App\\Services\\Site\\MobileDetect<\/a>"],[90,7,"<a href=\"Pixel\/DTO\/PixelConversionDTO.php.html#9\">App\\Services\\Site\\Pixel\\DTO\\PixelConversionDTO<\/a>"],[100,2,"<a href=\"Pixel\/PixelService.php.html#9\">App\\Services\\Site\\Pixel\\PixelService<\/a>"],[100,2,"<a href=\"Pwa\/DTO\/AddEventDTO.php.html#7\">App\\Services\\Site\\Pwa\\DTO\\AddEventDTO<\/a>"],[89.1156462585034,34,"<a href=\"Pwa\/PWAService.php.html#25\">App\\Services\\Site\\Pwa\\PWAService<\/a>"],[86.95652173913044,14,"<a href=\"SiteRequestService.php.html#9\">App\\Services\\Site\\SiteRequestService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[85.71428571428571,2,"<a href=\"ApplicationService.php.html#11\">App\\Services\\Site\\ApplicationService::getApplication<\/a>"],[100,1,"<a href=\"ApplicationService.php.html#23\">App\\Services\\Site\\ApplicationService::getApplicationByUuid<\/a>"],[100,1,"<a href=\"ApplicationService.php.html#28\">App\\Services\\Site\\ApplicationService::getWhitePage<\/a>"],[85.71428571428571,2,"<a href=\"ApplicationService.php.html#35\">App\\Services\\Site\\ApplicationService::fillApplicationForPreview<\/a>"],[100,1,"<a href=\"MobileDetect.php.html#812\">App\\Services\\Site\\MobileDetect::__construct<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#826\">App\\Services\\Site\\MobileDetect::getScriptVersion<\/a>"],[85.71428571428571,5,"<a href=\"MobileDetect.php.html#837\">App\\Services\\Site\\MobileDetect::setHttpHeaders<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#864\">App\\Services\\Site\\MobileDetect::getHttpHeaders<\/a>"],[0,4,"<a href=\"MobileDetect.php.html#879\">App\\Services\\Site\\MobileDetect::getHttpHeader<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#900\">App\\Services\\Site\\MobileDetect::getMobileHeaders<\/a>"],[100,1,"<a href=\"MobileDetect.php.html#911\">App\\Services\\Site\\MobileDetect::getUaHttpHeaders<\/a>"],[66.66666666666666,5,"<a href=\"MobileDetect.php.html#925\">App\\Services\\Site\\MobileDetect::setCfHeaders<\/a>"],[100,1,"<a href=\"MobileDetect.php.html#953\">App\\Services\\Site\\MobileDetect::getCfHeaders<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#962\">App\\Services\\Site\\MobileDetect::prepareUserAgent<\/a>"],[66.66666666666666,6,"<a href=\"MobileDetect.php.html#975\">App\\Services\\Site\\MobileDetect::setUserAgent<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1007\">App\\Services\\Site\\MobileDetect::getUserAgent<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1012\">App\\Services\\Site\\MobileDetect::getMatchingRegex<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1017\">App\\Services\\Site\\MobileDetect::getMatchesArray<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1027\">App\\Services\\Site\\MobileDetect::getPhoneDevices<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1037\">App\\Services\\Site\\MobileDetect::getTabletDevices<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1047\">App\\Services\\Site\\MobileDetect::getUserAgents<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1057\">App\\Services\\Site\\MobileDetect::getBrowsers<\/a>"],[100,2,"<a href=\"MobileDetect.php.html#1068\">App\\Services\\Site\\MobileDetect::getRules<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1089\">App\\Services\\Site\\MobileDetect::getOperatingSystems<\/a>"],[0,7,"<a href=\"MobileDetect.php.html#1101\">App\\Services\\Site\\MobileDetect::checkHttpHeadersForMobile<\/a>"],[75,2,"<a href=\"MobileDetect.php.html#1132\">App\\Services\\Site\\MobileDetect::__call<\/a>"],[0,4,"<a href=\"MobileDetect.php.html#1150\">App\\Services\\Site\\MobileDetect::matchDetectionRulesAgainstUA<\/a>"],[87.5,4,"<a href=\"MobileDetect.php.html#1175\">App\\Services\\Site\\MobileDetect::matchUAAgainstKey<\/a>"],[0,7,"<a href=\"MobileDetect.php.html#1202\">App\\Services\\Site\\MobileDetect::isMobile<\/a>"],[0,6,"<a href=\"MobileDetect.php.html#1239\">App\\Services\\Site\\MobileDetect::isTablet<\/a>"],[0,3,"<a href=\"MobileDetect.php.html#1271\">App\\Services\\Site\\MobileDetect::is<\/a>"],[18.181818181818183,5,"<a href=\"MobileDetect.php.html#1300\">App\\Services\\Site\\MobileDetect::match<\/a>"],[0,1,"<a href=\"MobileDetect.php.html#1325\">App\\Services\\Site\\MobileDetect::getProperties<\/a>"],[0,2,"<a href=\"MobileDetect.php.html#1339\">App\\Services\\Site\\MobileDetect::prepareVersionNo<\/a>"],[0,9,"<a href=\"MobileDetect.php.html#1364\">App\\Services\\Site\\MobileDetect::version<\/a>"],[100,1,"<a href=\"Pixel\/DTO\/PixelConversionDTO.php.html#11\">App\\Services\\Site\\Pixel\\DTO\\PixelConversionDTO::__construct<\/a>"],[89.47368421052632,6,"<a href=\"Pixel\/DTO\/PixelConversionDTO.php.html#25\">App\\Services\\Site\\Pixel\\DTO\\PixelConversionDTO::getFromClick<\/a>"],[100,2,"<a href=\"Pixel\/PixelService.php.html#11\">App\\Services\\Site\\Pixel\\PixelService::sendConversion<\/a>"],[100,2,"<a href=\"Pwa\/DTO\/AddEventDTO.php.html#13\">App\\Services\\Site\\Pwa\\DTO\\AddEventDTO::fromArray<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#30\">App\\Services\\Site\\Pwa\\PWAService::__construct<\/a>"],[96.29629629629629,2,"<a href=\"Pwa\/PWAService.php.html#36\">App\\Services\\Site\\Pwa\\PWAService::resolveClick<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#73\">App\\Services\\Site\\Pwa\\PWAService::resolveLink<\/a>"],[45.45454545454545,12,"<a href=\"Pwa\/PWAService.php.html#88\">App\\Services\\Site\\Pwa\\PWAService::resolveLanding<\/a>"],[87.5,5,"<a href=\"Pwa\/PWAService.php.html#124\">App\\Services\\Site\\Pwa\\PWAService::resolveClient<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#140\">App\\Services\\Site\\Pwa\\PWAService::getClientExternalId<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#145\">App\\Services\\Site\\Pwa\\PWAService::setClientExternalIdCookie<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#150\">App\\Services\\Site\\Pwa\\PWAService::setClientClickExternalIdCookie<\/a>"],[0,1,"<a href=\"Pwa\/PWAService.php.html#156\">App\\Services\\Site\\Pwa\\PWAService::getClientClickExternalId<\/a>"],[0,1,"<a href=\"Pwa\/PWAService.php.html#161\">App\\Services\\Site\\Pwa\\PWAService::getClick<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#166\">App\\Services\\Site\\Pwa\\PWAService::getClient<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#171\">App\\Services\\Site\\Pwa\\PWAService::createClient<\/a>"],[100,2,"<a href=\"Pwa\/PWAService.php.html#178\">App\\Services\\Site\\Pwa\\PWAService::createManifest<\/a>"],[100,3,"<a href=\"Pwa\/PWAService.php.html#244\">App\\Services\\Site\\Pwa\\PWAService::addEvent<\/a>"],[100,1,"<a href=\"Pwa\/PWAService.php.html#255\">App\\Services\\Site\\Pwa\\PWAService::createEvent<\/a>"],[80,9,"<a href=\"SiteRequestService.php.html#33\">App\\Services\\Site\\SiteRequestService::__construct<\/a>"],[100,2,"<a href=\"SiteRequestService.php.html#58\">App\\Services\\Site\\SiteRequestService::searchDomain<\/a>"],[100,2,"<a href=\"SiteRequestService.php.html#70\">App\\Services\\Site\\SiteRequestService::getProtocol<\/a>"],[100,1,"<a href=\"SiteRequestService.php.html#75\">App\\Services\\Site\\SiteRequestService::getHostUrl<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

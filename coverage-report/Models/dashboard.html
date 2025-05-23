@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Models</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NotificationTemplate.php.html#42">App\Models\NotificationTemplate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OneSignalEvents.php.html#13">App\Models\OneSignalEvents</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OneSignalNotification.php.html#14">App\Models\OneSignalNotification</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#65">App\Models\User</a></td><td class="text-right">7%</td></tr>
+       <tr><td><a href="Team.php.html#38">App\Models\Team</a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="Tier.php.html#15">App\Models\Tier</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="ApplicationComment.php.html#51">App\Models\ApplicationComment</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Invite.php.html#20">App\Models\Invite</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="PushTemplate.php.html#27">App\Models\PushTemplate</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="TelegraphBot.php.html#25">App\Models\TelegraphBot</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="PwaClient.php.html#22">App\Models\PwaClient</a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="ApplicationStatistic.php.html#25">App\Models\ApplicationStatistic</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="PwaClientClick.php.html#34">App\Models\PwaClientClick</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Company.php.html#20">App\Models\Company</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ApplicationStatistic.php.html#25">App\Models\ApplicationStatistic</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ApplicationComment.php.html#80"><abbr title="App\Models\ApplicationComment::author">author</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ApplicationComment.php.html#90"><abbr title="App\Models\ApplicationComment::origin">origin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Company.php.html#48"><abbr title="App\Models\Company::owner">owner</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Company.php.html#56"><abbr title="App\Models\Company::tariff">tariff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Invite.php.html#53"><abbr title="App\Models\Invite::team">team</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate.php.html#57"><abbr title="App\Models\NotificationTemplate::scopeCompanyNotifications">scopeCompanyNotifications</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate.php.html#69"><abbr title="App\Models\NotificationTemplate::roles">roles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OneSignalEvents.php.html#24"><abbr title="App\Models\OneSignalEvents::oneSignalNotification">oneSignalNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OneSignalNotification.php.html#41"><abbr title="App\Models\OneSignalNotification::pushNotification">pushNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OneSignalNotification.php.html#46"><abbr title="App\Models\OneSignalNotification::scopePushNotification">scopePushNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PushNotification.php.html#123"><abbr title="App\Models\PushNotification::scopeOneSignalNotification">scopeOneSignalNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PushTemplate.php.html#45"><abbr title="App\Models\PushTemplate::createdBy">createdBy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PwaClient.php.html#40"><abbr title="App\Models\PwaClient::getCountOfUnique">getCountOfUnique</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PwaClient.php.html#62"><abbr title="App\Models\PwaClient::pwaClientClicks">pwaClientClicks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PwaClientClick.php.html#63"><abbr title="App\Models\PwaClientClick::getCount">getCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Team.php.html#60"><abbr title="App\Models\Team::company">company</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Team.php.html#77"><abbr title="App\Models\Team::scopeTeamLead">scopeTeamLead</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Team.php.html#86"><abbr title="App\Models\Team::scopeUserCount">scopeUserCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegraphBot.php.html#46"><abbr title="App\Models\TelegraphBot::scopeCompany">scopeCompany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Tier.php.html#27"><abbr title="App\Models\Tier::tariff">tariff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Tier.php.html#37"><abbr title="App\Models\Tier::countriesBelongsTo">countriesBelongsTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#106"><abbr title="App\Models\User::scopeTeam">scopeTeam</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#111"><abbr title="App\Models\User::scopeCompany">scopeCompany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#127"><abbr title="App\Models\User::company">company</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#135"><abbr title="App\Models\User::team">team</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#148"><abbr title="App\Models\User::needNotify">needNotify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ApplicationStatistic.php.html#49"><abbr title="App\Models\ApplicationStatistic::scopeOwner">scopeOwner</abbr></a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="ApplicationStatistic.php.html#49"><abbr title="App\Models\ApplicationStatistic::scopeOwner">scopeOwner</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.7</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.14</a> and <a href="https://phpunit.de/">PHPUnit 11.4.2</a> at Wed Jan 22 10:58:40 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([3,1,1,0,1,0,4,1,2,1,1,15], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([26,0,0,0,0,0,0,1,0,0,0,55], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,8,"<a href=\"Application.php.html#58\">App\\Models\\Application<\/a>"],[50,4,"<a href=\"ApplicationComment.php.html#51\">App\\Models\\ApplicationComment<\/a>"],[75,3,"<a href=\"ApplicationStatistic.php.html#25\">App\\Models\\ApplicationStatistic<\/a>"],[87.5,6,"<a href=\"Company.php.html#20\">App\\Models\\Company<\/a>"],[100,0,"<a href=\"CompanyNotification.php.html#29\">App\\Models\\CompanyNotification<\/a>"],[100,0,"<a href=\"Domain.php.html#22\">App\\Models\\Domain<\/a>"],[100,0,"<a href=\"File.php.html#33\">App\\Models\\File<\/a>"],[50,2,"<a href=\"Invite.php.html#20\">App\\Models\\Invite<\/a>"],[0,2,"<a href=\"NotificationTemplate.php.html#42\">App\\Models\\NotificationTemplate<\/a>"],[100,0,"<a href=\"NotificationTemplateRole.php.html#27\">App\\Models\\NotificationTemplateRole<\/a>"],[0,1,"<a href=\"OneSignalEvents.php.html#13\">App\\Models\\OneSignalEvents<\/a>"],[0,2,"<a href=\"OneSignalNotification.php.html#14\">App\\Models\\OneSignalNotification<\/a>"],[100,0,"<a href=\"Permission.php.html#13\">App\\Models\\Permission<\/a>"],[92,14,"<a href=\"PushNotification.php.html#44\">App\\Models\\PushNotification<\/a>"],[50,2,"<a href=\"PushTemplate.php.html#27\">App\\Models\\PushTemplate<\/a>"],[63.63636363636363,5,"<a href=\"PwaClient.php.html#22\">App\\Models\\PwaClient<\/a>"],[78.94736842105263,6,"<a href=\"PwaClientClick.php.html#34\">App\\Models\\PwaClientClick<\/a>"],[100,4,"<a href=\"PwaClientEvent.php.html#23\">App\\Models\\PwaClientEvent<\/a>"],[100,1,"<a href=\"Tariff.php.html#19\">App\\Models\\Tariff<\/a>"],[11.11111111111111,4,"<a href=\"Team.php.html#38\">App\\Models\\Team<\/a>"],[50,2,"<a href=\"TelegraphBot.php.html#25\">App\\Models\\TelegraphBot<\/a>"],[100,1,"<a href=\"TelegraphChat.php.html#20\">App\\Models\\TelegraphChat<\/a>"],[33.33333333333333,3,"<a href=\"Tier.php.html#15\">App\\Models\\Tier<\/a>"],[100,1,"<a href=\"TierCountry.php.html#9\">App\\Models\\TierCountry<\/a>"],[7.6923076923076925,7,"<a href=\"User.php.html#65\">App\\Models\\User<\/a>"],[100,2,"<a href=\"Traits\/WithExternalId.php.html#5\">App\\Models\\Traits\\WithExternalId<\/a>"],[100,1,"<a href=\"Traits\/WithNumberExternalId.php.html#11\">App\\Models\\Traits\\WithNumberExternalId<\/a>"],[100,1,"<a href=\"Traits\/WithSoftDeletesNumberExternalId.php.html#14\">App\\Models\\Traits\\WithSoftDeletesNumberExternalId<\/a>"],[100,1,"<a href=\"Traits\/WithStringExternalId.php.html#14\">App\\Models\\Traits\\WithStringExternalId<\/a>"],[100,1,"<a href=\"Traits\/WithUuidExternalId.php.html#13\">App\\Models\\Traits\\WithUuidExternalId<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Application.php.html#107\">App\\Models\\Application::scopeStatistic<\/a>"],[100,1,"<a href=\"Application.php.html#122\">App\\Models\\Application::files<\/a>"],[100,1,"<a href=\"Application.php.html#127\">App\\Models\\Application::domain<\/a>"],[100,1,"<a href=\"Application.php.html#132\">App\\Models\\Application::applicationComments<\/a>"],[100,1,"<a href=\"Application.php.html#137\">App\\Models\\Application::scopeOwner<\/a>"],[100,1,"<a href=\"Application.php.html#142\">App\\Models\\Application::toOneSignalCreateApplicationDTO<\/a>"],[100,1,"<a href=\"Application.php.html#147\">App\\Models\\Application::pwaClients<\/a>"],[100,1,"<a href=\"Application.php.html#152\">App\\Models\\Application::owner<\/a>"],[100,1,"<a href=\"ApplicationComment.php.html#75\">App\\Models\\ApplicationComment::scopePublicId<\/a>"],[0,1,"<a href=\"ApplicationComment.php.html#80\">App\\Models\\ApplicationComment::author<\/a>"],[100,1,"<a href=\"ApplicationComment.php.html#85\">App\\Models\\ApplicationComment::application<\/a>"],[0,1,"<a href=\"ApplicationComment.php.html#90\">App\\Models\\ApplicationComment::origin<\/a>"],[100,1,"<a href=\"ApplicationStatistic.php.html#44\">App\\Models\\ApplicationStatistic::scopeApplication<\/a>"],[66.66666666666666,2,"<a href=\"ApplicationStatistic.php.html#49\">App\\Models\\ApplicationStatistic::scopeOwner<\/a>"],[0,1,"<a href=\"Company.php.html#48\">App\\Models\\Company::owner<\/a>"],[0,1,"<a href=\"Company.php.html#56\">App\\Models\\Company::tariff<\/a>"],[100,1,"<a href=\"Company.php.html#64\">App\\Models\\Company::users<\/a>"],[100,1,"<a href=\"Company.php.html#69\">App\\Models\\Company::scopeUserCount<\/a>"],[100,1,"<a href=\"Company.php.html#80\">App\\Models\\Company::scopeTeamCount<\/a>"],[100,1,"<a href=\"Company.php.html#91\">App\\Models\\Company::scopeOwner<\/a>"],[100,1,"<a href=\"Invite.php.html#45\">App\\Models\\Invite::company<\/a>"],[0,1,"<a href=\"Invite.php.html#53\">App\\Models\\Invite::team<\/a>"],[0,1,"<a href=\"NotificationTemplate.php.html#57\">App\\Models\\NotificationTemplate::scopeCompanyNotifications<\/a>"],[0,1,"<a href=\"NotificationTemplate.php.html#69\">App\\Models\\NotificationTemplate::roles<\/a>"],[0,1,"<a href=\"OneSignalEvents.php.html#24\">App\\Models\\OneSignalEvents::oneSignalNotification<\/a>"],[0,1,"<a href=\"OneSignalNotification.php.html#41\">App\\Models\\OneSignalNotification::pushNotification<\/a>"],[0,1,"<a href=\"OneSignalNotification.php.html#46\">App\\Models\\OneSignalNotification::scopePushNotification<\/a>"],[100,1,"<a href=\"PushNotification.php.html#81\">App\\Models\\PushNotification::canBeCanceled<\/a>"],[100,1,"<a href=\"PushNotification.php.html#87\">App\\Models\\PushNotification::createdBy<\/a>"],[100,1,"<a href=\"PushNotification.php.html#92\">App\\Models\\PushNotification::pushTemplate<\/a>"],[100,1,"<a href=\"PushNotification.php.html#97\">App\\Models\\PushNotification::application<\/a>"],[100,1,"<a href=\"PushNotification.php.html#102\">App\\Models\\PushNotification::oneSignalNotification<\/a>"],[100,1,"<a href=\"PushNotification.php.html#107\">App\\Models\\PushNotification::scopeCreatedBy<\/a>"],[100,1,"<a href=\"PushNotification.php.html#112\">App\\Models\\PushNotification::scopePushTemplate<\/a>"],[100,1,"<a href=\"PushNotification.php.html#117\">App\\Models\\PushNotification::scopeApplication<\/a>"],[0,1,"<a href=\"PushNotification.php.html#123\">App\\Models\\PushNotification::scopeOneSignalNotification<\/a>"],[100,1,"<a href=\"PushNotification.php.html#132\">App\\Models\\PushNotification::isWaiting<\/a>"],[100,1,"<a href=\"PushNotification.php.html#140\">App\\Models\\PushNotification::isActive<\/a>"],[100,1,"<a href=\"PushNotification.php.html#148\">App\\Models\\PushNotification::isSingle<\/a>"],[100,2,"<a href=\"PushNotification.php.html#157\">App\\Models\\PushNotification::toDTO<\/a>"],[0,1,"<a href=\"PushTemplate.php.html#45\">App\\Models\\PushTemplate::createdBy<\/a>"],[100,1,"<a href=\"PushTemplate.php.html#55\">App\\Models\\PushTemplate::scopeCreatedBy<\/a>"],[100,1,"<a href=\"PwaClient.php.html#30\">App\\Models\\PwaClient::getUpdatedAtColumn<\/a>"],[0,1,"<a href=\"PwaClient.php.html#40\">App\\Models\\PwaClient::getCountOfUnique<\/a>"],[100,1,"<a href=\"PwaClient.php.html#47\">App\\Models\\PwaClient::getCountOfUniqueByDate<\/a>"],[100,1,"<a href=\"PwaClient.php.html#57\">App\\Models\\PwaClient::application<\/a>"],[0,1,"<a href=\"PwaClient.php.html#62\">App\\Models\\PwaClient::pwaClientClicks<\/a>"],[100,1,"<a href=\"PwaClientClick.php.html#38\">App\\Models\\PwaClientClick::getUpdatedAtColumn<\/a>"],[0,1,"<a href=\"PwaClientClick.php.html#63\">App\\Models\\PwaClientClick::getCount<\/a>"],[100,1,"<a href=\"PwaClientClick.php.html#71\">App\\Models\\PwaClientClick::getCountByDate<\/a>"],[100,1,"<a href=\"PwaClientClick.php.html#82\">App\\Models\\PwaClientClick::getApplicationId<\/a>"],[100,1,"<a href=\"PwaClientClick.php.html#92\">App\\Models\\PwaClientClick::pwaClient<\/a>"],[100,1,"<a href=\"PwaClientClick.php.html#97\">App\\Models\\PwaClientClick::event<\/a>"],[100,1,"<a href=\"PwaClientEvent.php.html#27\">App\\Models\\PwaClientEvent::getUpdatedAtColumn<\/a>"],[100,1,"<a href=\"PwaClientEvent.php.html#44\">App\\Models\\PwaClientEvent::getApplicationId<\/a>"],[100,1,"<a href=\"PwaClientEvent.php.html#55\">App\\Models\\PwaClientEvent::getCountByDate<\/a>"],[100,1,"<a href=\"PwaClientEvent.php.html#68\">App\\Models\\PwaClientEvent::pwaClientClick<\/a>"],[100,1,"<a href=\"Tariff.php.html#30\">App\\Models\\Tariff::tiers<\/a>"],[0,1,"<a href=\"Team.php.html#60\">App\\Models\\Team::company<\/a>"],[100,1,"<a href=\"Team.php.html#68\">App\\Models\\Team::teamLead<\/a>"],[0,1,"<a href=\"Team.php.html#77\">App\\Models\\Team::scopeTeamLead<\/a>"],[0,1,"<a href=\"Team.php.html#86\">App\\Models\\Team::scopeUserCount<\/a>"],[100,1,"<a href=\"TelegraphBot.php.html#41\">App\\Models\\TelegraphBot::newFactory<\/a>"],[0,1,"<a href=\"TelegraphBot.php.html#46\">App\\Models\\TelegraphBot::scopeCompany<\/a>"],[100,1,"<a href=\"TelegraphChat.php.html#29\">App\\Models\\TelegraphChat::scopeWithActiveBot<\/a>"],[0,1,"<a href=\"Tier.php.html#27\">App\\Models\\Tier::tariff<\/a>"],[100,1,"<a href=\"Tier.php.html#32\">App\\Models\\Tier::countries<\/a>"],[0,1,"<a href=\"Tier.php.html#37\">App\\Models\\Tier::countriesBelongsTo<\/a>"],[100,1,"<a href=\"TierCountry.php.html#20\">App\\Models\\TierCountry::tier<\/a>"],[0,1,"<a href=\"User.php.html#106\">App\\Models\\User::scopeTeam<\/a>"],[0,1,"<a href=\"User.php.html#111\">App\\Models\\User::scopeCompany<\/a>"],[100,1,"<a href=\"User.php.html#119\">App\\Models\\User::isAdmin<\/a>"],[0,1,"<a href=\"User.php.html#127\">App\\Models\\User::company<\/a>"],[0,1,"<a href=\"User.php.html#135\">App\\Models\\User::team<\/a>"],[100,1,"<a href=\"User.php.html#143\">App\\Models\\User::telegraphChats<\/a>"],[0,1,"<a href=\"User.php.html#148\">App\\Models\\User::needNotify<\/a>"],[100,1,"<a href=\"Traits\/WithExternalId.php.html#7\">App\\Models\\Traits\\WithExternalId::boot<\/a>"],[100,1,"<a href=\"Traits\/WithExternalId.php.html#18\">App\\Models\\Traits\\WithExternalId::getExternalIdName<\/a>"],[100,1,"<a href=\"Traits\/WithNumberExternalId.php.html#16\">App\\Models\\Traits\\WithNumberExternalId::getExternalId<\/a>"],[100,1,"<a href=\"Traits\/WithSoftDeletesNumberExternalId.php.html#19\">App\\Models\\Traits\\WithSoftDeletesNumberExternalId::getExternalId<\/a>"],[100,1,"<a href=\"Traits\/WithStringExternalId.php.html#19\">App\\Models\\Traits\\WithStringExternalId::getExternalId<\/a>"],[100,1,"<a href=\"Traits\/WithUuidExternalId.php.html#18\">App\\Models\\Traits\\WithUuidExternalId::getExternalId<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

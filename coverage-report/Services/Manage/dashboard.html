@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Services/Manage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Services</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Manage</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#11">App\Services\Manage\NotificationTemplate\NotificationTemplateService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegramBot/DTO/SendMessagesDTO.php.html#5">App\Services\Manage\TelegramBot\DTO\SendMessagesDTO</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#14">App\Services\Manage\TelegramBot\TelegramBotService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#16">App\Services\Manage\PushNotification\PushNotificationService</a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="User/UserService.php.html#16">App\Services\Manage\User\UserService</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="User/DTO/NewApplicationOwnersDTO.php.html#5">App\Services\Manage\User\DTO\NewApplicationOwnersDTO</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#19">App\Services\Manage\Application\ApplicationService</a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="Company/CompanyService.php.html#12">App\Services\Manage\Company\CompanyService</a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#11">App\Services\Manage\NotificationTemplate\NotificationTemplateService</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="User/UserService.php.html#16">App\Services\Manage\User\UserService</a></td><td class="text-right">142</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#16">App\Services\Manage\PushNotification\PushNotificationService</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#14">App\Services\Manage\TelegramBot\TelegramBotService</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#19">App\Services\Manage\Application\ApplicationService</a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="Company/CompanyService.php.html#12">App\Services\Manage\Company\CompanyService</a></td><td class="text-right">7</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#13"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::getEntitiesList">getEntitiesList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#24"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::mapEventsList">mapEventsList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#29"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::getEventsList">getEventsList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#34"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::activeOptions">activeOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#42"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::enableForClientOptions">enableForClientOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#50"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::allRolesOptions">allRolesOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#58"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::getById">getById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#63"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#90"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#113"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#27"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::getTypeList">getTypeList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#181"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::getActiveRegularPushesForCreate">getActiveRegularPushesForCreate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegramBot/DTO/SendMessagesDTO.php.html#7"><abbr title="App\Services\Manage\TelegramBot\DTO\SendMessagesDTO::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#19"><abbr title="App\Services\Manage\TelegramBot\TelegramBotService::changeStatus">changeStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#36"><abbr title="App\Services\Manage\TelegramBot\TelegramBotService::sendMessagesToCompanies">sendMessagesToCompanies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/DTO/NewApplicationOwnersDTO.php.html#27"><abbr title="App\Services\Manage\User\DTO\NewApplicationOwnersDTO::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#18"><abbr title="App\Services\Manage\User\UserService::getStatusesForSelections">getStatusesForSelections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#39"><abbr title="App\Services\Manage\User\UserService::getEmployeeForSelections">getEmployeeForSelections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#63"><abbr title="App\Services\Manage\User\UserService::getUsersInCompanyForSelections">getUsersInCompanyForSelections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#95"><abbr title="App\Services\Manage\User\UserService::getObjectForEdit">getObjectForEdit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#108"><abbr title="App\Services\Manage\User\UserService::getRoles">getRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserService.php.html#138"><abbr title="App\Services\Manage\User\UserService::updateRoles">updateRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#53"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::create">create</abbr></a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#89"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::update">update</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#133"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::delete">delete</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#60"><abbr title="App\Services\Manage\Application\ApplicationService::save">save</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#45"><abbr title="App\Services\Manage\Application\ApplicationService::updateApplicationsOwners">updateApplicationsOwners</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="User/UserService.php.html#81"><abbr title="App\Services\Manage\User\UserService::getById">getById</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="User/UserService.php.html#203"><abbr title="App\Services\Manage\User\UserService::changeStatus">changeStatus</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Company/CompanyService.php.html#54"><abbr title="App\Services\Manage\Company\CompanyService::update">update</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="User/UserService.php.html#171"><abbr title="App\Services\Manage\User\UserService::canDeactivateUser">canDeactivateUser</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#106"><abbr title="App\Services\Manage\Application\ApplicationService::clone">clone</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#36"><abbr title="App\Services\Manage\TelegramBot\TelegramBotService::sendMessagesToCompanies">sendMessagesToCompanies</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#89"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::update">update</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#60"><abbr title="App\Services\Manage\Application\ApplicationService::save">save</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#63"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::create">create</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="NotificationTemplate/NotificationTemplateService.php.html#90"><abbr title="App\Services\Manage\NotificationTemplate\NotificationTemplateService::update">update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="User/UserService.php.html#171"><abbr title="App\Services\Manage\User\UserService::canDeactivateUser">canDeactivateUser</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#53"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::create">create</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="User/UserService.php.html#203"><abbr title="App\Services\Manage\User\UserService::changeStatus">changeStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="PushNotification/PushNotificationService.php.html#133"><abbr title="App\Services\Manage\PushNotification\PushNotificationService::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="TelegramBot/TelegramBotService.php.html#19"><abbr title="App\Services\Manage\TelegramBot\TelegramBotService::changeStatus">changeStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User/UserService.php.html#63"><abbr title="App\Services\Manage\User\UserService::getUsersInCompanyForSelections">getUsersInCompanyForSelections</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#45"><abbr title="App\Services\Manage\Application\ApplicationService::updateApplicationsOwners">updateApplicationsOwners</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Company/CompanyService.php.html#54"><abbr title="App\Services\Manage\Company\CompanyService::update">update</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="User/UserService.php.html#81"><abbr title="App\Services\Manage\User\UserService::getById">getById</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Application/ApplicationService.php.html#106"><abbr title="App\Services\Manage\Application\ApplicationService::clone">clone</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.7</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.14</a> and <a href="https://phpunit.de/">PHPUnit 11.4.2</a> at Wed Jan 22 10:58:40 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([3,0,0,0,0,1,2,0,1,1,0,3], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([22,0,0,0,1,0,3,0,3,3,0,35], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[77.02702702702703,20,"<a href=\"Application\/ApplicationService.php.html#19\">App\\Services\\Manage\\Application\\ApplicationService<\/a>"],[100,9,"<a href=\"Application\/CommentService.php.html#9\">App\\Services\\Manage\\Application\\CommentService<\/a>"],[85.71428571428571,7,"<a href=\"Company\/CompanyService.php.html#12\">App\\Services\\Manage\\Company\\CompanyService<\/a>"],[0,14,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#11\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService<\/a>"],[45.94594594594595,21,"<a href=\"PushNotification\/PushNotificationService.php.html#16\">App\\Services\\Manage\\PushNotification\\PushNotificationService<\/a>"],[100,6,"<a href=\"PushTemplate\/PushTemplateService.php.html#9\">App\\Services\\Manage\\PushTemplate\\PushTemplateService<\/a>"],[100,9,"<a href=\"Role\/RoleService.php.html#10\">App\\Services\\Manage\\Role\\RoleService<\/a>"],[0,1,"<a href=\"TelegramBot\/DTO\/SendMessagesDTO.php.html#5\">App\\Services\\Manage\\TelegramBot\\DTO\\SendMessagesDTO<\/a>"],[0,6,"<a href=\"TelegramBot\/TelegramBotService.php.html#14\">App\\Services\\Manage\\TelegramBot\\TelegramBotService<\/a>"],[55.55555555555556,3,"<a href=\"User\/DTO\/NewApplicationOwnersDTO.php.html#5\">App\\Services\\Manage\\User\\DTO\\NewApplicationOwnersDTO<\/a>"],[50,30,"<a href=\"User\/UserService.php.html#16\">App\\Services\\Manage\\User\\UserService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Application\/ApplicationService.php.html#21\">App\\Services\\Manage\\Application\\ApplicationService::getListForSelections<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#28\">App\\Services\\Manage\\Application\\ApplicationService::update<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#36\">App\\Services\\Manage\\Application\\ApplicationService::getById<\/a>"],[71.42857142857143,5,"<a href=\"Application\/ApplicationService.php.html#45\">App\\Services\\Manage\\Application\\ApplicationService::updateApplicationsOwners<\/a>"],[57.14285714285714,9,"<a href=\"Application\/ApplicationService.php.html#60\">App\\Services\\Manage\\Application\\ApplicationService::save<\/a>"],[88,2,"<a href=\"Application\/ApplicationService.php.html#106\">App\\Services\\Manage\\Application\\ApplicationService::clone<\/a>"],[100,1,"<a href=\"Application\/ApplicationService.php.html#140\">App\\Services\\Manage\\Application\\ApplicationService::deactivate<\/a>"],[100,3,"<a href=\"Application\/CommentService.php.html#11\">App\\Services\\Manage\\Application\\CommentService::getCommonComments<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#34\">App\\Services\\Manage\\Application\\CommentService::clone<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#50\">App\\Services\\Manage\\Application\\CommentService::create<\/a>"],[100,2,"<a href=\"Application\/CommentService.php.html#62\">App\\Services\\Manage\\Application\\CommentService::getById<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#71\">App\\Services\\Manage\\Application\\CommentService::delete<\/a>"],[100,1,"<a href=\"Application\/CommentService.php.html#78\">App\\Services\\Manage\\Application\\CommentService::update<\/a>"],[100,1,"<a href=\"Company\/CompanyService.php.html#14\">App\\Services\\Manage\\Company\\CompanyService::getCompanyForSelections<\/a>"],[100,1,"<a href=\"Company\/CompanyService.php.html#25\">App\\Services\\Manage\\Company\\CompanyService::getCompanyById<\/a>"],[100,1,"<a href=\"Company\/CompanyService.php.html#34\">App\\Services\\Manage\\Company\\CompanyService::getCompanyByPublicId<\/a>"],[100,1,"<a href=\"Company\/CompanyService.php.html#43\">App\\Services\\Manage\\Company\\CompanyService::getListOfCompanyUsers<\/a>"],[80,3,"<a href=\"Company\/CompanyService.php.html#54\">App\\Services\\Manage\\Company\\CompanyService::update<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#13\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::getEntitiesList<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#24\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::mapEventsList<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#29\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::getEventsList<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#34\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::activeOptions<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#42\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::enableForClientOptions<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#50\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::allRolesOptions<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#58\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::getById<\/a>"],[0,3,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#63\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::create<\/a>"],[0,3,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#90\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::update<\/a>"],[0,1,"<a href=\"NotificationTemplate\/NotificationTemplateService.php.html#113\">App\\Services\\Manage\\NotificationTemplate\\NotificationTemplateService::delete<\/a>"],[100,1,"<a href=\"PushNotification\/PushNotificationService.php.html#18\">App\\Services\\Manage\\PushNotification\\PushNotificationService::getStatusList<\/a>"],[0,1,"<a href=\"PushNotification\/PushNotificationService.php.html#27\">App\\Services\\Manage\\PushNotification\\PushNotificationService::getTypeList<\/a>"],[100,1,"<a href=\"PushNotification\/PushNotificationService.php.html#39\">App\\Services\\Manage\\PushNotification\\PushNotificationService::getById<\/a>"],[38.46153846153847,4,"<a href=\"PushNotification\/PushNotificationService.php.html#53\">App\\Services\\Manage\\PushNotification\\PushNotificationService::create<\/a>"],[50,8,"<a href=\"PushNotification\/PushNotificationService.php.html#89\">App\\Services\\Manage\\PushNotification\\PushNotificationService::update<\/a>"],[50,4,"<a href=\"PushNotification\/PushNotificationService.php.html#133\">App\\Services\\Manage\\PushNotification\\PushNotificationService::delete<\/a>"],[100,1,"<a href=\"PushNotification\/PushNotificationService.php.html#168\">App\\Services\\Manage\\PushNotification\\PushNotificationService::copy<\/a>"],[0,1,"<a href=\"PushNotification\/PushNotificationService.php.html#181\">App\\Services\\Manage\\PushNotification\\PushNotificationService::getActiveRegularPushesForCreate<\/a>"],[100,1,"<a href=\"PushTemplate\/PushTemplateService.php.html#11\">App\\Services\\Manage\\PushTemplate\\PushTemplateService::getEventsList<\/a>"],[100,1,"<a href=\"PushTemplate\/PushTemplateService.php.html#20\">App\\Services\\Manage\\PushTemplate\\PushTemplateService::getById<\/a>"],[100,1,"<a href=\"PushTemplate\/PushTemplateService.php.html#25\">App\\Services\\Manage\\PushTemplate\\PushTemplateService::create<\/a>"],[100,1,"<a href=\"PushTemplate\/PushTemplateService.php.html#31\">App\\Services\\Manage\\PushTemplate\\PushTemplateService::update<\/a>"],[100,1,"<a href=\"PushTemplate\/PushTemplateService.php.html#39\">App\\Services\\Manage\\PushTemplate\\PushTemplateService::getStatusesList<\/a>"],[100,1,"<a href=\"PushTemplate\/PushTemplateService.php.html#47\">App\\Services\\Manage\\PushTemplate\\PushTemplateService::getListForSelections<\/a>"],[100,1,"<a href=\"Role\/RoleService.php.html#16\">App\\Services\\Manage\\Role\\RoleService::getRoleById<\/a>"],[100,1,"<a href=\"Role\/RoleService.php.html#26\">App\\Services\\Manage\\Role\\RoleService::update<\/a>"],[100,2,"<a href=\"Role\/RoleService.php.html#39\">App\\Services\\Manage\\Role\\RoleService::store<\/a>"],[100,1,"<a href=\"Role\/RoleService.php.html#52\">App\\Services\\Manage\\Role\\RoleService::destroy<\/a>"],[100,1,"<a href=\"Role\/RoleService.php.html#57\">App\\Services\\Manage\\Role\\RoleService::syncUserRoles<\/a>"],[100,1,"<a href=\"Role\/RoleService.php.html#62\">App\\Services\\Manage\\Role\\RoleService::getRolesForSelections<\/a>"],[100,2,"<a href=\"Role\/RoleService.php.html#70\">App\\Services\\Manage\\Role\\RoleService::getUsersWithRoles<\/a>"],[0,1,"<a href=\"TelegramBot\/DTO\/SendMessagesDTO.php.html#7\">App\\Services\\Manage\\TelegramBot\\DTO\\SendMessagesDTO::__construct<\/a>"],[0,2,"<a href=\"TelegramBot\/TelegramBotService.php.html#19\">App\\Services\\Manage\\TelegramBot\\TelegramBotService::changeStatus<\/a>"],[0,4,"<a href=\"TelegramBot\/TelegramBotService.php.html#36\">App\\Services\\Manage\\TelegramBot\\TelegramBotService::sendMessagesToCompanies<\/a>"],[100,1,"<a href=\"User\/DTO\/NewApplicationOwnersDTO.php.html#11\">App\\Services\\Manage\\User\\DTO\\NewApplicationOwnersDTO::__construct<\/a>"],[100,1,"<a href=\"User\/DTO\/NewApplicationOwnersDTO.php.html#17\">App\\Services\\Manage\\User\\DTO\\NewApplicationOwnersDTO::fromArray<\/a>"],[0,1,"<a href=\"User\/DTO\/NewApplicationOwnersDTO.php.html#27\">App\\Services\\Manage\\User\\DTO\\NewApplicationOwnersDTO::toArray<\/a>"],[0,1,"<a href=\"User\/UserService.php.html#18\">App\\Services\\Manage\\User\\UserService::getStatusesForSelections<\/a>"],[0,1,"<a href=\"User\/UserService.php.html#39\">App\\Services\\Manage\\User\\UserService::getEmployeeForSelections<\/a>"],[100,1,"<a href=\"User\/UserService.php.html#56\">App\\Services\\Manage\\User\\UserService::getUsersForSelections<\/a>"],[0,2,"<a href=\"User\/UserService.php.html#63\">App\\Services\\Manage\\User\\UserService::getUsersInCompanyForSelections<\/a>"],[75,2,"<a href=\"User\/UserService.php.html#81\">App\\Services\\Manage\\User\\UserService::getById<\/a>"],[0,1,"<a href=\"User\/UserService.php.html#95\">App\\Services\\Manage\\User\\UserService::getObjectForEdit<\/a>"],[0,1,"<a href=\"User\/UserService.php.html#108\">App\\Services\\Manage\\User\\UserService::getRoles<\/a>"],[100,1,"<a href=\"User\/UserService.php.html#119\">App\\Services\\Manage\\User\\UserService::getActiveApplications<\/a>"],[0,1,"<a href=\"User\/UserService.php.html#138\">App\\Services\\Manage\\User\\UserService::updateRoles<\/a>"],[100,3,"<a href=\"User\/UserService.php.html#152\">App\\Services\\Manage\\User\\UserService::update<\/a>"],[85.71428571428571,10,"<a href=\"User\/UserService.php.html#171\">App\\Services\\Manage\\User\\UserService::canDeactivateUser<\/a>"],[76.47058823529412,6,"<a href=\"User\/UserService.php.html#203\">App\\Services\\Manage\\User\\UserService::changeStatus<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

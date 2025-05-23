@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Http/Requests/Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../_css/bootstrap.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../../_css/nv.d3.min.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../../_css/style.css?v=11.0.7" rel="stylesheet" type="text/css">
+  <link href="../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">Http</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Requests</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Admin</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Client/Notification/ActivateRequest.php.html#7">App\Http\Requests\Admin\Client\Notification\ActivateRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Client/TelegramBot/ChangeStatusTelegramBotRequest.php.html#7">App\Http\Requests\Admin\Client\TelegramBot\ChangeStatusTelegramBotRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Common/Auth/Login.php.html#7">App\Http\Requests\Admin\Common\Auth\Login</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Common/DataListing/DataRequest.php.html#7">App\Http\Requests\Admin\Common\DataListing\DataRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/SendMessageRequest.php.html#11">App\Http\Requests\Admin\Manage\NotificationTemplate\SendMessageRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/StoreRequest.php.html#12">App\Http\Requests\Admin\Manage\NotificationTemplate\StoreRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/UpdateRequest.php.html#12">App\Http\Requests\Admin\Manage\NotificationTemplate\UpdateRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/TelegramBot/ChangeStatusTelegramBotRequest.php.html#7">App\Http\Requests\Admin\Manage\TelegramBot\ChangeStatusTelegramBotRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/User/UpdateRequest.php.html#9">App\Http\Requests\Admin\Manage\User\UpdateRequest</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Client/Notification/ActivateRequest.php.html#12"><abbr title="App\Http\Requests\Admin\Client\Notification\ActivateRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Client/Notification/ActivateRequest.php.html#22"><abbr title="App\Http\Requests\Admin\Client\Notification\ActivateRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Client/TelegramBot/ChangeStatusTelegramBotRequest.php.html#12"><abbr title="App\Http\Requests\Admin\Client\TelegramBot\ChangeStatusTelegramBotRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Client/TelegramBot/ChangeStatusTelegramBotRequest.php.html#22"><abbr title="App\Http\Requests\Admin\Client\TelegramBot\ChangeStatusTelegramBotRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Common/Auth/Login.php.html#12"><abbr title="App\Http\Requests\Admin\Common\Auth\Login::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Common/Auth/Login.php.html#22"><abbr title="App\Http\Requests\Admin\Common\Auth\Login::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Common/DataListing/DataRequest.php.html#12"><abbr title="App\Http\Requests\Admin\Common\DataListing\DataRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Common/DataListing/DataRequest.php.html#22"><abbr title="App\Http\Requests\Admin\Common\DataListing\DataRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/SendMessageRequest.php.html#13"><abbr title="App\Http\Requests\Admin\Manage\NotificationTemplate\SendMessageRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/SendMessageRequest.php.html#24"><abbr title="App\Http\Requests\Admin\Manage\NotificationTemplate\SendMessageRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/StoreRequest.php.html#14"><abbr title="App\Http\Requests\Admin\Manage\NotificationTemplate\StoreRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/StoreRequest.php.html#25"><abbr title="App\Http\Requests\Admin\Manage\NotificationTemplate\StoreRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/UpdateRequest.php.html#14"><abbr title="App\Http\Requests\Admin\Manage\NotificationTemplate\UpdateRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/NotificationTemplate/UpdateRequest.php.html#25"><abbr title="App\Http\Requests\Admin\Manage\NotificationTemplate\UpdateRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/TelegramBot/ChangeStatusTelegramBotRequest.php.html#12"><abbr title="App\Http\Requests\Admin\Manage\TelegramBot\ChangeStatusTelegramBotRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/TelegramBot/ChangeStatusTelegramBotRequest.php.html#22"><abbr title="App\Http\Requests\Admin\Manage\TelegramBot\ChangeStatusTelegramBotRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/User/UpdateRequest.php.html#14"><abbr title="App\Http\Requests\Admin\Manage\User\UpdateRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Manage/User/UpdateRequest.php.html#24"><abbr title="App\Http\Requests\Admin\Manage\User\UpdateRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.7</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.14</a> and <a href="https://phpunit.de/">PHPUnit 11.4.2</a> at Wed Jan 22 10:58:40 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../_js/jquery.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../../_js/d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script src="../../../_js/nv.d3.min.js?v=11.0.7" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([9,0,0,0,0,0,0,0,0,0,1,27], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([18,0,0,0,0,0,0,0,0,0,1,61], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,5,"<a href=\"Client\/Application\/SaveApplicationRequest.php.html#12\">App\\Http\\Requests\\Admin\\Client\\Application\\SaveApplicationRequest<\/a>"],[100,2,"<a href=\"Client\/ApplicationComment\/CloneRequest.php.html#8\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\CloneRequest<\/a>"],[100,2,"<a href=\"Client\/ApplicationComment\/SearchRequest.php.html#7\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\SearchRequest<\/a>"],[100,2,"<a href=\"Client\/ApplicationComment\/StoreRequest.php.html#7\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\StoreRequest<\/a>"],[100,2,"<a href=\"Client\/ApplicationComment\/UpdateRequest.php.html#8\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\UpdateRequest<\/a>"],[100,2,"<a href=\"Client\/Company\/UpdateRequest.php.html#8\">App\\Http\\Requests\\Admin\\Client\\Company\\UpdateRequest<\/a>"],[100,2,"<a href=\"Client\/Domain\/ChangeStatusRequest.php.html#8\">App\\Http\\Requests\\Admin\\Client\\Domain\\ChangeStatusRequest<\/a>"],[100,2,"<a href=\"Client\/Domain\/StoreRequest.php.html#8\">App\\Http\\Requests\\Admin\\Client\\Domain\\StoreRequest<\/a>"],[0,2,"<a href=\"Client\/Notification\/ActivateRequest.php.html#7\">App\\Http\\Requests\\Admin\\Client\\Notification\\ActivateRequest<\/a>"],[100,3,"<a href=\"Client\/Team\/UpdateRequest.php.html#8\">App\\Http\\Requests\\Admin\\Client\\Team\\UpdateRequest<\/a>"],[0,2,"<a href=\"Client\/TelegramBot\/ChangeStatusTelegramBotRequest.php.html#7\">App\\Http\\Requests\\Admin\\Client\\TelegramBot\\ChangeStatusTelegramBotRequest<\/a>"],[100,2,"<a href=\"Client\/TelegramBot\/UpdateTelegramBotRequest.php.html#7\">App\\Http\\Requests\\Admin\\Client\\TelegramBot\\UpdateTelegramBotRequest<\/a>"],[100,4,"<a href=\"Client\/User\/CanDeactivateRequest.php.html#8\">App\\Http\\Requests\\Admin\\Client\\User\\CanDeactivateRequest<\/a>"],[100,2,"<a href=\"Client\/User\/DeactivateRequest.php.html#10\">App\\Http\\Requests\\Admin\\Client\\User\\DeactivateRequest<\/a>"],[0,2,"<a href=\"Common\/Auth\/Login.php.html#7\">App\\Http\\Requests\\Admin\\Common\\Auth\\Login<\/a>"],[100,3,"<a href=\"Common\/Auth\/LoginRequest.php.html#7\">App\\Http\\Requests\\Admin\\Common\\Auth\\LoginRequest<\/a>"],[100,2,"<a href=\"Common\/Auth\/RegisterRequest.php.html#7\">App\\Http\\Requests\\Admin\\Common\\Auth\\RegisterRequest<\/a>"],[0,2,"<a href=\"Common\/DataListing\/DataRequest.php.html#7\">App\\Http\\Requests\\Admin\\Common\\DataListing\\DataRequest<\/a>"],[100,2,"<a href=\"Common\/File\/UploadRequest.php.html#7\">App\\Http\\Requests\\Admin\\Common\\File\\UploadRequest<\/a>"],[100,2,"<a href=\"Common\/TelegramAuth\/TgAuthRequestRequest.php.html#7\">App\\Http\\Requests\\Admin\\Common\\TelegramAuth\\TgAuthRequestRequest<\/a>"],[97.2972972972973,4,"<a href=\"Manage\/Application\/SaveApplicationRequest.php.html#12\">App\\Http\\Requests\\Admin\\Manage\\Application\\SaveApplicationRequest<\/a>"],[100,2,"<a href=\"Manage\/ApplicationComment\/CloneRequest.php.html#8\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\CloneRequest<\/a>"],[100,2,"<a href=\"Manage\/ApplicationComment\/SearchRequest.php.html#7\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\SearchRequest<\/a>"],[100,2,"<a href=\"Manage\/ApplicationComment\/StoreRequest.php.html#7\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\StoreRequest<\/a>"],[100,2,"<a href=\"Manage\/ApplicationComment\/UpdateRequest.php.html#8\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\UpdateRequest<\/a>"],[100,2,"<a href=\"Manage\/Company\/UpdateRequest.php.html#8\">App\\Http\\Requests\\Admin\\Manage\\Company\\UpdateRequest<\/a>"],[0,2,"<a href=\"Manage\/NotificationTemplate\/SendMessageRequest.php.html#11\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\SendMessageRequest<\/a>"],[0,2,"<a href=\"Manage\/NotificationTemplate\/StoreRequest.php.html#12\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\StoreRequest<\/a>"],[0,2,"<a href=\"Manage\/NotificationTemplate\/UpdateRequest.php.html#12\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\UpdateRequest<\/a>"],[100,2,"<a href=\"Manage\/PushNotification\/StoreRequest.php.html#13\">App\\Http\\Requests\\Admin\\Manage\\PushNotification\\StoreRequest<\/a>"],[100,2,"<a href=\"Manage\/PushTemplate\/StoreRequest.php.html#12\">App\\Http\\Requests\\Admin\\Manage\\PushTemplate\\StoreRequest<\/a>"],[100,2,"<a href=\"Manage\/Role\/CreateRequest.php.html#8\">App\\Http\\Requests\\Admin\\Manage\\Role\\CreateRequest<\/a>"],[100,4,"<a href=\"Manage\/Role\/DestroyRequest.php.html#10\">App\\Http\\Requests\\Admin\\Manage\\Role\\DestroyRequest<\/a>"],[100,2,"<a href=\"Manage\/Role\/UpdateRequest.php.html#10\">App\\Http\\Requests\\Admin\\Manage\\Role\\UpdateRequest<\/a>"],[0,2,"<a href=\"Manage\/TelegramBot\/ChangeStatusTelegramBotRequest.php.html#7\">App\\Http\\Requests\\Admin\\Manage\\TelegramBot\\ChangeStatusTelegramBotRequest<\/a>"],[100,2,"<a href=\"Manage\/User\/ChangeStatusRequest.php.html#9\">App\\Http\\Requests\\Admin\\Manage\\User\\ChangeStatusRequest<\/a>"],[0,2,"<a href=\"Manage\/User\/UpdateRequest.php.html#9\">App\\Http\\Requests\\Admin\\Manage\\User\\UpdateRequest<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Client\/Application\/SaveApplicationRequest.php.html#17\">App\\Http\\Requests\\Admin\\Client\\Application\\SaveApplicationRequest::authorize<\/a>"],[100,3,"<a href=\"Client\/Application\/SaveApplicationRequest.php.html#27\">App\\Http\\Requests\\Admin\\Client\\Application\\SaveApplicationRequest::rules<\/a>"],[100,1,"<a href=\"Client\/Application\/SaveApplicationRequest.php.html#76\">App\\Http\\Requests\\Admin\\Client\\Application\\SaveApplicationRequest::messages<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/CloneRequest.php.html#13\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\CloneRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/CloneRequest.php.html#23\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\CloneRequest::rules<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/SearchRequest.php.html#12\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\SearchRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/SearchRequest.php.html#22\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\SearchRequest::rules<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/StoreRequest.php.html#12\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\StoreRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/StoreRequest.php.html#22\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\StoreRequest::rules<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/UpdateRequest.php.html#13\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\UpdateRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/ApplicationComment\/UpdateRequest.php.html#23\">App\\Http\\Requests\\Admin\\Client\\ApplicationComment\\UpdateRequest::rules<\/a>"],[100,1,"<a href=\"Client\/Company\/UpdateRequest.php.html#13\">App\\Http\\Requests\\Admin\\Client\\Company\\UpdateRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/Company\/UpdateRequest.php.html#23\">App\\Http\\Requests\\Admin\\Client\\Company\\UpdateRequest::rules<\/a>"],[100,1,"<a href=\"Client\/Domain\/ChangeStatusRequest.php.html#13\">App\\Http\\Requests\\Admin\\Client\\Domain\\ChangeStatusRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/Domain\/ChangeStatusRequest.php.html#23\">App\\Http\\Requests\\Admin\\Client\\Domain\\ChangeStatusRequest::rules<\/a>"],[100,1,"<a href=\"Client\/Domain\/StoreRequest.php.html#13\">App\\Http\\Requests\\Admin\\Client\\Domain\\StoreRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/Domain\/StoreRequest.php.html#23\">App\\Http\\Requests\\Admin\\Client\\Domain\\StoreRequest::rules<\/a>"],[0,1,"<a href=\"Client\/Notification\/ActivateRequest.php.html#12\">App\\Http\\Requests\\Admin\\Client\\Notification\\ActivateRequest::authorize<\/a>"],[0,1,"<a href=\"Client\/Notification\/ActivateRequest.php.html#22\">App\\Http\\Requests\\Admin\\Client\\Notification\\ActivateRequest::rules<\/a>"],[100,1,"<a href=\"Client\/Team\/UpdateRequest.php.html#13\">App\\Http\\Requests\\Admin\\Client\\Team\\UpdateRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/Team\/UpdateRequest.php.html#21\">App\\Http\\Requests\\Admin\\Client\\Team\\UpdateRequest::prepareForValidation<\/a>"],[100,1,"<a href=\"Client\/Team\/UpdateRequest.php.html#33\">App\\Http\\Requests\\Admin\\Client\\Team\\UpdateRequest::rules<\/a>"],[0,1,"<a href=\"Client\/TelegramBot\/ChangeStatusTelegramBotRequest.php.html#12\">App\\Http\\Requests\\Admin\\Client\\TelegramBot\\ChangeStatusTelegramBotRequest::authorize<\/a>"],[0,1,"<a href=\"Client\/TelegramBot\/ChangeStatusTelegramBotRequest.php.html#22\">App\\Http\\Requests\\Admin\\Client\\TelegramBot\\ChangeStatusTelegramBotRequest::rules<\/a>"],[100,1,"<a href=\"Client\/TelegramBot\/UpdateTelegramBotRequest.php.html#12\">App\\Http\\Requests\\Admin\\Client\\TelegramBot\\UpdateTelegramBotRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/TelegramBot\/UpdateTelegramBotRequest.php.html#22\">App\\Http\\Requests\\Admin\\Client\\TelegramBot\\UpdateTelegramBotRequest::rules<\/a>"],[100,1,"<a href=\"Client\/User\/CanDeactivateRequest.php.html#13\">App\\Http\\Requests\\Admin\\Client\\User\\CanDeactivateRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/User\/CanDeactivateRequest.php.html#23\">App\\Http\\Requests\\Admin\\Client\\User\\CanDeactivateRequest::rules<\/a>"],[100,2,"<a href=\"Client\/User\/CanDeactivateRequest.php.html#34\">App\\Http\\Requests\\Admin\\Client\\User\\CanDeactivateRequest::prepareForValidation<\/a>"],[100,1,"<a href=\"Client\/User\/DeactivateRequest.php.html#15\">App\\Http\\Requests\\Admin\\Client\\User\\DeactivateRequest::authorize<\/a>"],[100,1,"<a href=\"Client\/User\/DeactivateRequest.php.html#25\">App\\Http\\Requests\\Admin\\Client\\User\\DeactivateRequest::rules<\/a>"],[0,1,"<a href=\"Common\/Auth\/Login.php.html#12\">App\\Http\\Requests\\Admin\\Common\\Auth\\Login::authorize<\/a>"],[0,1,"<a href=\"Common\/Auth\/Login.php.html#22\">App\\Http\\Requests\\Admin\\Common\\Auth\\Login::rules<\/a>"],[100,1,"<a href=\"Common\/Auth\/LoginRequest.php.html#12\">App\\Http\\Requests\\Admin\\Common\\Auth\\LoginRequest::authorize<\/a>"],[100,1,"<a href=\"Common\/Auth\/LoginRequest.php.html#22\">App\\Http\\Requests\\Admin\\Common\\Auth\\LoginRequest::rules<\/a>"],[100,1,"<a href=\"Common\/Auth\/LoginRequest.php.html#30\">App\\Http\\Requests\\Admin\\Common\\Auth\\LoginRequest::messages<\/a>"],[100,1,"<a href=\"Common\/Auth\/RegisterRequest.php.html#12\">App\\Http\\Requests\\Admin\\Common\\Auth\\RegisterRequest::authorize<\/a>"],[100,1,"<a href=\"Common\/Auth\/RegisterRequest.php.html#22\">App\\Http\\Requests\\Admin\\Common\\Auth\\RegisterRequest::rules<\/a>"],[0,1,"<a href=\"Common\/DataListing\/DataRequest.php.html#12\">App\\Http\\Requests\\Admin\\Common\\DataListing\\DataRequest::authorize<\/a>"],[0,1,"<a href=\"Common\/DataListing\/DataRequest.php.html#22\">App\\Http\\Requests\\Admin\\Common\\DataListing\\DataRequest::rules<\/a>"],[100,1,"<a href=\"Common\/File\/UploadRequest.php.html#12\">App\\Http\\Requests\\Admin\\Common\\File\\UploadRequest::authorize<\/a>"],[100,1,"<a href=\"Common\/File\/UploadRequest.php.html#22\">App\\Http\\Requests\\Admin\\Common\\File\\UploadRequest::rules<\/a>"],[100,1,"<a href=\"Common\/TelegramAuth\/TgAuthRequestRequest.php.html#12\">App\\Http\\Requests\\Admin\\Common\\TelegramAuth\\TgAuthRequestRequest::authorize<\/a>"],[100,1,"<a href=\"Common\/TelegramAuth\/TgAuthRequestRequest.php.html#22\">App\\Http\\Requests\\Admin\\Common\\TelegramAuth\\TgAuthRequestRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/Application\/SaveApplicationRequest.php.html#17\">App\\Http\\Requests\\Admin\\Manage\\Application\\SaveApplicationRequest::authorize<\/a>"],[96.96969696969697,2,"<a href=\"Manage\/Application\/SaveApplicationRequest.php.html#27\">App\\Http\\Requests\\Admin\\Manage\\Application\\SaveApplicationRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/Application\/SaveApplicationRequest.php.html#70\">App\\Http\\Requests\\Admin\\Manage\\Application\\SaveApplicationRequest::messages<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/CloneRequest.php.html#13\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\CloneRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/CloneRequest.php.html#23\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\CloneRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/SearchRequest.php.html#12\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\SearchRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/SearchRequest.php.html#22\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\SearchRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/StoreRequest.php.html#12\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\StoreRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/StoreRequest.php.html#22\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\StoreRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/UpdateRequest.php.html#13\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\UpdateRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/ApplicationComment\/UpdateRequest.php.html#23\">App\\Http\\Requests\\Admin\\Manage\\ApplicationComment\\UpdateRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/Company\/UpdateRequest.php.html#13\">App\\Http\\Requests\\Admin\\Manage\\Company\\UpdateRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/Company\/UpdateRequest.php.html#23\">App\\Http\\Requests\\Admin\\Manage\\Company\\UpdateRequest::rules<\/a>"],[0,1,"<a href=\"Manage\/NotificationTemplate\/SendMessageRequest.php.html#13\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\SendMessageRequest::authorize<\/a>"],[0,1,"<a href=\"Manage\/NotificationTemplate\/SendMessageRequest.php.html#24\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\SendMessageRequest::rules<\/a>"],[0,1,"<a href=\"Manage\/NotificationTemplate\/StoreRequest.php.html#14\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\StoreRequest::authorize<\/a>"],[0,1,"<a href=\"Manage\/NotificationTemplate\/StoreRequest.php.html#25\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\StoreRequest::rules<\/a>"],[0,1,"<a href=\"Manage\/NotificationTemplate\/UpdateRequest.php.html#14\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\UpdateRequest::authorize<\/a>"],[0,1,"<a href=\"Manage\/NotificationTemplate\/UpdateRequest.php.html#25\">App\\Http\\Requests\\Admin\\Manage\\NotificationTemplate\\UpdateRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/PushNotification\/StoreRequest.php.html#15\">App\\Http\\Requests\\Admin\\Manage\\PushNotification\\StoreRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/PushNotification\/StoreRequest.php.html#25\">App\\Http\\Requests\\Admin\\Manage\\PushNotification\\StoreRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/PushTemplate\/StoreRequest.php.html#14\">App\\Http\\Requests\\Admin\\Manage\\PushTemplate\\StoreRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/PushTemplate\/StoreRequest.php.html#25\">App\\Http\\Requests\\Admin\\Manage\\PushTemplate\\StoreRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/Role\/CreateRequest.php.html#13\">App\\Http\\Requests\\Admin\\Manage\\Role\\CreateRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/Role\/CreateRequest.php.html#23\">App\\Http\\Requests\\Admin\\Manage\\Role\\CreateRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/Role\/DestroyRequest.php.html#15\">App\\Http\\Requests\\Admin\\Manage\\Role\\DestroyRequest::authorize<\/a>"],[100,2,"<a href=\"Manage\/Role\/DestroyRequest.php.html#25\">App\\Http\\Requests\\Admin\\Manage\\Role\\DestroyRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/Role\/DestroyRequest.php.html#52\">App\\Http\\Requests\\Admin\\Manage\\Role\\DestroyRequest::messages<\/a>"],[100,1,"<a href=\"Manage\/Role\/UpdateRequest.php.html#15\">App\\Http\\Requests\\Admin\\Manage\\Role\\UpdateRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/Role\/UpdateRequest.php.html#25\">App\\Http\\Requests\\Admin\\Manage\\Role\\UpdateRequest::rules<\/a>"],[0,1,"<a href=\"Manage\/TelegramBot\/ChangeStatusTelegramBotRequest.php.html#12\">App\\Http\\Requests\\Admin\\Manage\\TelegramBot\\ChangeStatusTelegramBotRequest::authorize<\/a>"],[0,1,"<a href=\"Manage\/TelegramBot\/ChangeStatusTelegramBotRequest.php.html#22\">App\\Http\\Requests\\Admin\\Manage\\TelegramBot\\ChangeStatusTelegramBotRequest::rules<\/a>"],[100,1,"<a href=\"Manage\/User\/ChangeStatusRequest.php.html#14\">App\\Http\\Requests\\Admin\\Manage\\User\\ChangeStatusRequest::authorize<\/a>"],[100,1,"<a href=\"Manage\/User\/ChangeStatusRequest.php.html#24\">App\\Http\\Requests\\Admin\\Manage\\User\\ChangeStatusRequest::rules<\/a>"],[0,1,"<a href=\"Manage\/User\/UpdateRequest.php.html#14\">App\\Http\\Requests\\Admin\\Manage\\User\\UpdateRequest::authorize<\/a>"],[0,1,"<a href=\"Manage\/User\/UpdateRequest.php.html#24\">App\\Http\\Requests\\Admin\\Manage\\User\\UpdateRequest::rules<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
